@@ -58,10 +58,6 @@ const Hero = () => {
                     </div>
 
                     <div className="hero-image col-span-6 px-8 relative mt-8 lg:mt-0">
-                        <div className="grid grid-cols-2 gap-8">
-                            <img src={phone2} className="col-span-1" style={{ transform: 'translateX(20px)' }} />
-                            <img src={phone1} className="col-span-1" style={{ transform: 'rotate(10deg) translateX(-20px)' }} />
-                        </div>
                         <div className="absolute bg-orange-500 rounded-full" style={{
                             transform: 'translateY(-50%)',
                             top: '50%',
@@ -70,6 +66,10 @@ const Hero = () => {
                             paddingTop: '100%',
                             opacity: 0.75
                         }} />
+                        <div className="grid grid-cols-2 gap-8">
+                            <img src={phone2} className="col-span-1" style={{ transform: 'translateX(20px)' }} />
+                            <img src={phone1} className="col-span-1" style={{ transform: 'rotate(10deg) translateX(-20px)' }} />
+                        </div>
                     </div>
                 </div>
             </div>
