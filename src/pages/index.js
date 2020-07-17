@@ -1,26 +1,30 @@
 import React from "react"
 
 import Layout from "../components/Layout"
+import Wave from "../components/Wave"
+
 import Header from "../components/Header"
 import Hero from "../components/Hero"
-import Idea from "../components/Idea"
-import Features from "../components/Features"
-import Partner from "../components/Partner"
+
+import Benefits from "../components/Benefits"
+
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 
+import "../../node_modules/highlight.js/styles/xcode.css"
+
 const IndexPage = () => (
-    <Layout>
+    <Layout className="bg-white">
         <div className="min-h-screen flex flex-col">
             <Header />
             <Hero />
+            <Wave position="top" />
         </div>
 
-        <Idea />
-        <Features />
-        <Partner />
-        { /* <Contact /> */ }
+        <Benefits />
 
+        <Wave position="bottom" />
+        <Contact />
         <Footer />
     </Layout>
 )

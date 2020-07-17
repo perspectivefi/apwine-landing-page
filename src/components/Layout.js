@@ -8,9 +8,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, ...props }) => {
   return (
-    <body>
+    <body {...props}>
       {children}
     </body>
   )
