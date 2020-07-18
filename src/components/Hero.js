@@ -23,7 +23,7 @@ const Hero = () => {
                 <div className="relative browser-mockup flex flex-1 mx-6 md:px-0 md:mx-32 bg-white rounded-lg shadow-xl">
                     <iframe
                         className="flex-1 rounded-b-lg"
-                        src={`${true ? "http://localhost:3000" : "https://interaction.uly.dev"}/youtube/5qap5aO4i9A?muted=1`}
+                        src={`${process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://embed.upstreamer.app"}/youtube/5qap5aO4i9A?muted=1`}
                         frameBorder="0"
                         allowFullScreen
                         allow="autoplay" />
