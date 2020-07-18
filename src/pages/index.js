@@ -7,6 +7,7 @@ import Header from "../components/Header"
 import Hero from "../components/Hero"
 
 import Benefits from "../components/Benefits"
+import Usage from "../components/Usage"
 
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
@@ -22,6 +23,7 @@ const IndexPage = () => (
         </div>
 
         <Benefits />
+        <Usage />
 
         <Wave position="bottom" />
         <Contact />
