@@ -26,7 +26,7 @@ const Hero = () => {
                         src={`${true ? "http://localhost:3000" : "https://interaction.uly.dev"}/youtube/5qap5aO4i9A?muted=1`}
                         frameBorder="0"
                         allowFullScreen
-                        allow="autoplay; fullscreen" />
+                        allow="autoplay" />
                     <span className="absolute left-0 top-0 transform -ml-8 text-white text-xl font-black md:block hidden" style={{ transform: "translateX(-100%) rotate(-15deg)" }}>
                         Try it out!
                     </span>
