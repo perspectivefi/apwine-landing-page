@@ -11,15 +11,13 @@ const Usage = () => (
             <p className="leading-normal text-gray-900 text-base md:text-xl lg:text-2xl mb-8">
                 With YouTube, Vimeo and more upcoming streaming services
             </p>
-            <p className="leading-normal text-left text-gray-900 text-base md:text-md lg:text-lg mx-6 md:px-0 md:mx-32">
-                <Highlight className="html">
-                    {
-                        '<iframe\n' +
-                        ' src="https://site.com/youtube/5qap5aO4i9A?muted=1"\n' +
-                        ' frameborder="0" allowfullscreen allow="autoplay" />'
-                    }
-                </Highlight>
-            </p>
+            <Highlight className="html text-left max-w-full mx-auto">
+                {
+                    '<iframe\n' +
+                    ' src="https://embed.upstreamer.app/{mode}/{id}?muted=1"\n' +
+                    ' frameborder="0" allowfullscreen allow="autoplay" />'
+                }
+            </Highlight>
         </div>
         
     </section>
