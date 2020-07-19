@@ -4,7 +4,7 @@ import ContentLayout from "../components/ContentLayout"
 import Container from "../components/Container"
 
 const TOSPage = () => (
-    <ContentLayout>
+    <ContentLayout pageName="Terms of Service">
         <Container>
             <h2>Upstreamer Terms of Service</h2>
             <h3>1. Terms</h3>

@@ -8,10 +8,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const Layout = ({ children, ...props }) => {
+import SEO from "./SEO"
+
+const Layout = ({ children, pageName, ...props }) => {
   return (
     <div {...props}>
       {children}
+      <SEO pageName={pageName} />
     </div>
   )
 }

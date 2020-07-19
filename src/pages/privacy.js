@@ -4,7 +4,7 @@ import ContentLayout from "../components/ContentLayout"
 import Container from "../components/Container"
 
 const TOSPage = () => (
-    <ContentLayout>
+    <ContentLayout pageName="Privacy Policy">
         <Container>
             <h2>Privacy Policy</h2>
             <p>Your privacy is important to us. It is Upstreamer's policy to respect your privacy regarding any information we may collect from you across our website, <a href="https://upstreamer.app">https://upstreamer.app</a>, and other sites we own and operate.</p>

@@ -8,16 +8,18 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import SEO from "./SEO"
+
 import Header from "./Header"
 import Footer from "./Footer"
-import Wave from "./Wave"
 
-const ContentLayout = ({ children, ...props }) => {
+const ContentLayout = ({ children, pageName, ...props }) => {
   return (
     <div {...props}>
       <Header />
       {children}
       <Footer />
+      <SEO pageName={pageName} />
     </div>
   )
 }
