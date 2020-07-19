@@ -22,6 +22,8 @@ const SEO = ({ pageName }) => {
     const description = defaults.description;
     const url = defaults.baseUrl;
 
+    const image = false
+
     return (
         <Helmet>
             <title>{title}</title>
