@@ -11,7 +11,7 @@ const Benefits = () => {
                     Broadcast engaging content
                 </h1>
                 <p className="leading-normal text-gray-900 text-base md:text-xl lg:text-2xl mb-8">
-                    From live events to streams or vlogs, LiveRiver provides a new, non-intrusive layer of interaction
+                    From live events to streams or vlogs, Upstreamer provides a new, non-intrusive layer of interaction
                 </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 text-center mx-12 md:mx-32 lg:mx-64 gap-16">

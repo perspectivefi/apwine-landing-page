@@ -15,7 +15,7 @@ const Hero = () => {
                     Add live interaction to any video
                 </h1>
                 <p className="leading-normal text-gray-900 text-base md:text-xl lg:text-2xl mb-8">
-                    LiveRiver lets you engage your audience and build hype on your events, streams, etc.
+                    Upstreamer lets you engage your audience and build hype on your events, streams, etc.
                 </p>
             </div>
 
