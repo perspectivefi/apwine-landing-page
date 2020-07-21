@@ -39,8 +39,7 @@ const Contact = () => (
                 Interested?
             </h1>
             <p className="leading-loose text-gray-900 text-base md:text-lg lg:text-xl mb-8">
-                Are you a content creator or broadcaster, wanting a solution tailored to your needs? Or just curious to try?<br/>
-                Sign up for our beta and we'll reach back to you as soon as possible!
+                Are you a content creator or broadcaster, wanting a solution tailored to your needs? Or just curious to try? Let's talk about it! Sign up for our beta and we'll reach back to you as soon as possible!
             </p>
         </div>
         <SubscribeForm />
