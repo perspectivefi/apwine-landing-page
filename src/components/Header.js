@@ -8,7 +8,10 @@ const Header = () => {
     return (
         <header className="flex flex-row items-center justify-center py-8 bg-blue-500">
 
-            <Link to="/"><img src={logo} className="w-16 h-16" /></Link>
+            <Link to="/" className="flex flex-col items-center justify-center">
+                <img src={logo} className="w-16 h-16 mb-2" />
+                <span className="font-black text-white">Upstreamer</span>
+            </Link>
 
         </header>
     )

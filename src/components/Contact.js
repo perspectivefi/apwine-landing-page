@@ -35,7 +35,7 @@ const SubscribeForm = () => {
 const Contact = () => (
     <section className="py-32 bg-blue-500">
         <div className="text-center text-white px-3 lg:px-0">
-            <h1 className="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight">
+            <h1 className="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight border-b-4 mx-auto border-opacity-25" style={{width:"fit-content"}}>
                 Interested?
             </h1>
             <p className="leading-loose text-gray-900 text-base md:text-lg lg:text-xl mb-8">
