@@ -27,12 +27,16 @@ const Hero = () => {
                         frameBorder="0"
                         allowFullScreen
                         allow="autoplay" />
-                    <span className="absolute left-0 top-0 transform -ml-8 text-white text-xl font-black md:block hidden" style={{ transform: "translateX(-100%) rotate(-15deg)" }}>
-                        Try it out!
-                    </span>
-                    <img 
-                        className="absolute left-0 top-0 transform -ml-2 mt-8 w-16 -translate-x-full md:block hidden"
-                        src={arrow} />
+                    <div className="pointer-events-none">
+                        <>
+                            <span className="absolute left-0 top-0 transform -ml-8 text-white text-xl font-black md:block hidden" style={{ transform: "translateX(-100%) rotate(-15deg)" }}>
+                                Try it out!
+                            </span>
+                            <img 
+                                className="absolute left-0 top-0 transform -ml-2 mt-8 w-16 -translate-x-full md:block hidden"
+                                src={arrow} />
+                        </>
+                    </div>
                 </div>
             </div>
 
