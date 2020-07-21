@@ -10,7 +10,7 @@ const Customisation = () => {
         <section className="my-32">
             <div className="text-center text-blue-500 px-3 lg:px-0">
                 <h1 className="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight border-b-4 mx-auto border-opacity-25 border-blue-500" style={{width:"fit-content"}}>
-                    Extendable
+                    Extensible
                 </h1>
                 <p className="leading-normal text-gray-900 text-base md:text-xl lg:text-2xl mb-16 max-w-3xl mx-auto">
                     Upstreamer turns your regular video into a welcoming place for your audience
