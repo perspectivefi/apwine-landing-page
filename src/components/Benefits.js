@@ -10,7 +10,7 @@ const Benefits = () => {
                 <h1 className="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight border-b-4 mx-auto border-opacity-25 border-blue-500" style={{width:"fit-content"}}>
                     Broadcast engaging content
                 </h1>
-                <p className="leading-normal text-gray-900 text-base md:text-xl lg:text-2xl mb-16">
+                <p className="leading-normal text-gray-900 text-base md:text-xl lg:text-2xl mb-16 max-w-3xl mx-auto">
                     From live events to streams or vlogs, Upstreamer provides a new, non-intrusive layer of interaction
                 </p>
             </div>

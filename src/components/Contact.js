@@ -38,7 +38,7 @@ const Contact = () => (
             <h1 className="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight border-b-4 mx-auto border-opacity-25" style={{width:"fit-content"}}>
                 Interested?
             </h1>
-            <p className="leading-loose text-gray-900 text-base md:text-lg lg:text-xl mb-8">
+            <p className="leading-loose text-gray-900 text-base md:text-lg lg:text-xl mb-8 max-w-3xl mx-auto">
                 Are you a content creator or broadcaster, wanting a solution tailored to your needs? Or just curious to try? Let's talk about it! Sign up for our beta and we'll reach back to you as soon as possible!
             </p>
         </div>
