@@ -16,12 +16,12 @@ const Benefits = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 text-center mx-12 md:mx-32 lg:mx-64 gap-16">
                 <div className="col-span-1">
-                    <img src={friends} className="h-40 mb-8 mx-auto" />
+                    <img src={friends} className="h-40 mb-8 mx-auto" alt="" />
                     <h2 className="mb-4 text-xl leading-tight font-bold">Interaction</h2>
                     <p className="text-md">People love to communicate. Give your viewers the chance to interact with each other and share their feelings on your content.</p>
                 </div>
                 <div className="col-span-1">
-                    <img src={appreciation} className="h-40 mb-8 mx-auto" />
+                    <img src={appreciation} className="h-40 mb-8 mx-auto" alt="" />
                     <h2 className="mb-4 text-xl leading-tight font-bold">Fun</h2>
                     <p className="text-md">Our platform was designed to make live interaction more fun. A new way to get engaged with your events means more audience retention.</p>
                 </div>

@@ -22,8 +22,9 @@ const Hero = () => {
             <div className="flex items-center w-full mx-auto content-end">
                 <div className="relative browser-mockup flex flex-1 mx-6 md:px-0 md:mx-32 bg-white rounded-lg shadow-xl">
                     <iframe
+                        title="demo"
                         className="flex-1 rounded-b-lg"
-                        src={`${process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://embed.upstreamer.app"}/youtube/5qap5aO4i9A?muted=1`}
+                        src={`${process.env.NODE_ENV === "development" ? "http://localhost:3003" : "https://embed.upstreamer.app"}/youtube/5qap5aO4i9A?muted=1`}
                         frameBorder="0"
                         allowFullScreen
                         allow="autoplay" />
@@ -34,7 +35,7 @@ const Hero = () => {
                             </span>
                             <img 
                                 className="absolute left-0 top-0 transform -ml-2 mt-8 w-16 -translate-x-full md:block hidden"
-                                src={arrow} />
+                                src={arrow} alt="" />
                         </>
                     </div>
                 </div>

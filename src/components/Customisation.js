@@ -18,28 +18,28 @@ const Customisation = () => {
             </div>
             <div className="flex flex-col max-w-3xl mx-auto">
                 <div className="flex flex-col md:flex-row mb-16 items-center">
-                    <img src={layout} className="w-48 md:mr-8 mb-8 md:mb-0" />
+                    <img src={layout} className="w-48 md:mr-8 mb-8 md:mb-0" alt="" />
                     <div className="flex flex-col text-center md:text-left">
                         <h2 className="mb-4 text-xl leading-tight font-bold">Custom Layout</h2>
                         <p className="text-md max-w-sm">Display your logo, a social network link, a donation form, or any HTML element on top of your stream.</p>
                     </div>
                 </div>
                 <div className="flex flex-col md:flex-row-reverse mb-16 items-center">
-                    <img src={happy} className="w-48 md:ml-8 mb-8 md:mb-0" />
+                    <img src={happy} className="w-48 md:ml-8 mb-8 md:mb-0" alt="" />
                     <div className="flex flex-col text-center md:text-right">
                         <h2 className="mb-4 text-xl leading-tight font-bold">Custom Reactions</h2>
                         <p className="text-md max-w-sm">Enable new custom reactions for your audience.</p>
                     </div>
                 </div>
                 <div className="flex flex-col md:flex-row mb-16 items-center">
-                    <img src={announcement} className="w-48 md:mr-8 mb-8 md:mb-0" />
+                    <img src={announcement} className="w-48 md:mr-8 mb-8 md:mb-0" alt="" />
                     <div className="flex flex-col text-center md:text-left">
                         <h2 className="mb-4 text-xl leading-tight font-bold">Announcements</h2>
                         <p className="text-md max-w-sm">Easily broadcast interactable announcements in real time, without having to fiddle with your video stream.</p>
                     </div>
                 </div>
                 <div className="flex flex-col md:flex-row-reverse items-center">
-                    <img src={vr} className="w-48 md:ml-8 mb-8 md:mb-0" />
+                    <img src={vr} className="w-48 md:ml-8 mb-8 md:mb-0" alt="" />
                     <div className="flex flex-col text-center md:text-right">
                         <h2 className="mb-4 text-xl leading-tight font-bold">Upcoming VR support</h2>
                         <p className="text-md max-w-sm">Let your tech enthusiast viewers experience your stream in VR with WebVR-compatible headsets, with zero additional configuration.</p>

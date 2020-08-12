@@ -11,7 +11,7 @@ const SubscribeForm = () => {
             url={url}
             render={({ subscribe, status, message }) => <>
                 <form className="flex flex-col sm:flex-row justify-center px-8" onSubmit={e => { subscribe({ EMAIL: email }); e.preventDefault() }}>
-                    <input type="email" required placeholder="Enter your email" onChange={e => setEmail(e.target.value)}
+                    <input aria-label="email" type="email" required placeholder="Enter your email" onChange={e => setEmail(e.target.value)}
                         className="block sm:max-w-xs w-full px-4 py-3 text-base leading-6 appearance-none border border-gray-300 shadow-none bg-white rounded-md placeholder-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300" />
                     <button className="mt-4 relative sm:mt-0 sm:h-auto sm:ml-4 block w-full sm:w-auto border border-transparent px-6 py-3 text-base leading-6 font-semibold leading-snug bg-gray-900 text-white rounded-md shadow-md hover:bg-gray-800 focus:outline-none focus:bg-gray-800 transition ease-in-out duration-150 hover:bg-gray-600" type="sub">
                         <span className={status === "sending" ? "opacity-0" : ""}>Sign up</span>
