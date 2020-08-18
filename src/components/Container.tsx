@@ -1,7 +1,11 @@
-import React from "react"
+import React, { FunctionComponent } from "react"
+import classnames from "classnames"
 
-const Container = ({ children }) => (
-    <section className="base bg-white max-w-3xl mx-auto p-8 m-8 rounded-lg">
+const Container: FunctionComponent<{ className?: string }> = ({ className, children }) => (
+    <section className={classnames(
+        "max-w-2xl mx-auto p-8 m-8",
+        className
+    )}>
         { children }
     </section>
 )
