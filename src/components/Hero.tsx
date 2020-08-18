@@ -12,7 +12,6 @@ import { FaTelegramPlane, FaTools } from "react-icons/fa"
 import logo from "../images/logo.png"
 import Bubbles from "./Bubbles"
 
-
 const GradientDiv = styled.div`
     background:
         linear-gradient(calc(180deg - 10deg), rgba(0, 0, 0, 0.0) 30%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.2) 100%),
