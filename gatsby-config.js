@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Upstreamer`,
-    description: `Add fun, live interaction to any stream or video`,
-    author: `ulydev`,
-    baseUrl: `https://upstreamer.app`
+    title: `APWine`,
+    description: `TODO:`,
+    author: `apwine`,
+    baseUrl: `https://apwine.fi`
   },
   plugins: [
     `gatsby-plugin-postcss`,
