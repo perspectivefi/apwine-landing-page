@@ -18,37 +18,3 @@
 
 @tailwind components;
 @tailwind utilities;
-
-html {
-    background: #4299e1;
-}
-
-.browser-mockup {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
-
-    border-top: 2em solid rgba(230, 230, 230, 0.7);
-    position: relative;
-    height: 60vh;
-}
-
-.browser-mockup::before {
-    display: block;
-    position: absolute;
-    content: "";
-    top: -1.25em;
-    left: 1em;
-    width: 0.5em;
-    height: 0.5em;
-    border-radius: 50%;
-    background-color: #f44;
-    box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
-}
-
-@keyframes spin {
-    from { transform: rotate(0); }
-    to { transform: rotate(360deg); }
-}
-
-.hljs {
-    width: fit-content;
-}
