@@ -9,17 +9,17 @@ import Wave from "./Wave"
 
 import { FaTelegramPlane, FaTools } from "react-icons/fa"
 
-import logo from "../images/logo.png"
+import logo from "../images/logo_outline_small.png"
 import Bubbles from "./Bubbles"
 
 const GradientDiv = styled.div`
-    background:
+    /*background:
         linear-gradient(calc(180deg - 10deg), rgba(0, 0, 0, 0.0) 30%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.2) 100%),
-        linear-gradient(#82c7f4, #bfe6e2);
+        linear-gradient(#82c7f4, #bfe6e2);*/
 `
 
 const Hero = () => (
-    <GradientDiv className="relative flex flex-col min-h-screen">
+    <GradientDiv className="relative flex flex-col min-h-screen bg-gray-900">
         <Bubbles />
         <div className={classnames(
             "flex-1",
@@ -29,19 +29,19 @@ const Hero = () => (
             "z-10" // draw above bubbles
         )}>
             <Container className="flex flex-col items-center">
-                <img src={logo} className="w-24" />
+                <img src={logo} className="w-32" />
                 <h2 className={classnames(
                     "mt-8 text-4xl font-bold leading-relaxed text-white text-center"
                 )}>
-                    APWine is a special DEX allowing to trade unreleased APY.
+                    APWine is a DEX allowing to trade unreleased APY.
                 </h2>
                 <h3 className={classnames(
-                    "mt-8 text-2xl font-bold text-gray-800"
+                    "mt-8 text-lg font-normal text-gray-400"
                 )}>
                     Launching in September 2020
                 </h3>
                 <div className={classnames(
-                    "flex flex-row",
+                    "flex md:flex-row flex-col",
                     "mt-4"
                 )}>
                     <Button
@@ -52,7 +52,7 @@ const Hero = () => (
                     <Button
                         href="https://test.com"
                         icon={FaTools}
-                        className="ml-4">
+                        className="mt-4 md:mt-0 md:ml-4">
                         Try the Alpha
                     </Button>
                 </div>

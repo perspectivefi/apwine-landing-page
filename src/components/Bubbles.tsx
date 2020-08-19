@@ -5,7 +5,7 @@ import classnames from "classnames"
 const N_BUBBLES = 30
 const BUBBLES = Array.from(Array(N_BUBBLES).keys()).map(i => {
     const Bubble = styled.div`
-        background-color: rgba(255, 255, 255, 0.4);
+        background-color: rgba(255, 255, 255, 0.05);
         display: inline-block;
         width: 30px;
         height: 30px;

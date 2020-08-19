@@ -2,15 +2,37 @@ import React from "react"
 
 import Layout from "../components/Layout"
 
-import Hero from "../components/Hero"
 import Container from "../components/Container"
+import Divider from "../components/Divider"
+
+import Hero from "../components/Hero"
+import Features from "../components/Features"
+import HowItWorks from "../components/HowItWorks"
+import FAQ from "../components/FAQ"
+import Team from "../components/Team"
+import Footer from "../components/Footer"
 
 const IndexPage = () => (
     <Layout className="bg-white">
         <Hero />
-        <Container>
-            <h2 className="text-gray-800 text-lg font-normal text-center">Site currently being built. Join the discussion group for more updates!</h2>
-        </Container>
+
+        <Container children={<Features />} />
+
+        <Container children={<Divider />} />
+
+        <Container children={<HowItWorks />} />
+
+        <Container children={<Divider />} />
+
+        <Container children={<FAQ />} />
+
+        {/* <Container children={<Divider />} /> */}
+
+        <Container children={<Team />} />
+
+        { /* <Divider /> */ }
+
+        <Container children={<Footer />} />
     </Layout>
 )
 
