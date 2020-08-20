@@ -10,6 +10,8 @@ const HowItWorks = () => (
         <Paragraph className="mt-8">
             It works with pure magic.
             If you don't believe us just check the <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" className="text-blue-500 font-bold hover:text-blue-600" target="_blank">whitepaper</a> for yourselves.
+            <br/><br/>
+            You can also check out our <a href="/blog" className="text-blue-500 font-bold hover:text-blue-600">blog</a> for more updates!
         </Paragraph>
     </div>
 )
