@@ -31,7 +31,7 @@ const Hero = () => (
             <Container className="flex flex-col items-center">
                 <img src={logo} className="w-32" />
                 <h2 className={classnames(
-                    "mt-8 text-4xl font-bold leading-relaxed text-white text-center"
+                    "mt-8 text-4xl font-bold leading-normal text-white text-center"
                 )}>
                     APWine is a DEX allowing to trade unreleased APY.
                 </h2>
