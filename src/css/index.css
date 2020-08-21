@@ -1,20 +1,4 @@
 @tailwind base;
 
-.base h1 {
-    @apply text-2xl mb-2;
-}
-.base h2 {
-    @apply text-xl mb-2;
-}
-.base h3 {
-    @apply text-lg mb-2;
-}
-.base a {
-    @apply text-blue-600 underline;
-}
-.base p {
-    @apply mb-2;
-}
-
 @tailwind components;
 @tailwind utilities;
