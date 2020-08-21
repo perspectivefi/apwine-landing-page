@@ -15,11 +15,11 @@ const BlogHeader = () => (
             <img src={logo} className="w-16" />
             <div className="ml-2 flex flex-col">
                 <h2 className={classnames(
-                    "text-3xl font-bold leading-relaxed text-white text-center"
+                    "text-3xl font-bold leading-tight text-white text-center"
                 )}>
                     APWine Blog
                 </h2>
-                <a href="/" className="text-sm text-gray-400 hover:text-blue-500">Back to <b>apwine.fi</b></a>
+                <a href="/" className="text-sm text-gray-400 hover:text-blue-500 leading-tight">Back to <b>apwine.fi</b></a>
             </div>
         </Container>
         <Wave />
