@@ -1,6 +1,6 @@
 ---
 slug: "/blog/another-one"
-date: "2019-05-04"
+date: "2019-05-05"
 title: "Another One"
 ---
 
