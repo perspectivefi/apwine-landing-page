@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `APWine`,
-    description: `TODO:`,
+    description: `APWine is a protocol allowing to trade unreleased APY. It lets lenders tokenize their future yield locking their bearing interests tokens for a defined amount of time.`,
     author: `apwine`,
     baseUrl: `https://apwine.fi`
   },
