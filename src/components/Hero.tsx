@@ -8,6 +8,7 @@ import Button from "./Button"
 import Wave from "./Wave"
 
 import { FaTelegramPlane, FaTools } from "react-icons/fa"
+import { FiTwitter } from "react-icons/fi"
 
 import logo from "../images/logo_outline_small.png"
 import Bubbles from "./Bubbles"
@@ -33,12 +34,12 @@ const Hero = () => (
                 <h2 className={classnames(
                     "mt-8 text-4xl font-bold leading-normal text-white text-center"
                 )}>
-                    APWine is a DEX allowing to trade unreleased APY.
+                    APWine is a protocol allowing to trade unreleased APY.
                 </h2>
                 <h3 className={classnames(
-                    "mt-8 text-lg font-normal text-gray-400"
+                    "mt-8 text-lg font-normal text-gray-400 flex flex-row items-center"
                 )}>
-                    Launching in September 2020
+                    Launching in September 2020 <a href="https://twitter.com/apwinefinance" target="_blank" className="ml-2 hover:text-blue-500"><FiTwitter /></a>
                 </h3>
                 <div className={classnames(
                     "flex md:flex-row flex-col",
