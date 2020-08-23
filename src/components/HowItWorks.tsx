@@ -8,10 +8,9 @@ const HowItWorks = () => (
     <div>
         <Title>How does it work?</Title>
         <Paragraph className="mt-8">
-            It works with pure magic.
-            If you don't believe us just check the <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" className="text-blue-500 font-bold hover:text-blue-600" target="_blank">whitepaper</a> for yourselves.
+            APWine allows lenders to tokenize their future yield locking their bearing interests tokens for a defined amount of time. They can then trade this token, which enables its holder to redeem the yield after the locking period.
             <br/><br/>
-            You can also check out our <a href="/blog" className="text-blue-500 font-bold hover:text-blue-600">blog</a> for more updates!
+            Learn more in our <a href="https://github.com" target="_blank" className="text-blue-500 font-bold hover:text-blue-600">whitepaper</a>, or check out the <a href="/blog" className="text-blue-500 font-bold hover:text-blue-600">blog</a> for more updates!
         </Paragraph>
     </div>
 )

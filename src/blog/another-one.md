@@ -1,7 +1,7 @@
 ---
-slug: "/blog/another-one"
-date: "2019-05-05"
-title: "Another One"
+slug: "/blog/first-post"
+date: "2020-08-23"
+title: "First Post"
 ---
 
-Oh wow you really love to read this!
+Welcome to the APWine blog.

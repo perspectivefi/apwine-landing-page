@@ -12,12 +12,16 @@ const FAQ = () => {
 
     const questions = [
         [
-            "Is it true that you take 4%?",
-            "Yes it's true. We believe it's good enough to buy a lambo and two model S."
+            "What would be the interest to lock tokens inside your protocol?",
+            "You can instantly sell your unrealised APY to hedge against price movement."
         ],
         [
-            "How experienced are you in DeFi?",
-            "Our team has 30+ years of experience in the industry. We were there before it even started."
+            "Why would I be interested in the governance token?",
+            "The token will be useful to decide in which direction the project is going to go, and vote on particular functionalities. Token Holders also get as a reward 1% of the pool of every expiring \"contracts\"."
+        ],
+        [
+            "What are the risks of locking my funds in your protocol?",
+            "The only risk to take into account is that of yield protocol SC failure."
         ]
     ]
 
