@@ -46,12 +46,12 @@ const Hero = () => (
                     "mt-4"
                 )}>
                     <Button
-                        href="https://test.com"
+                        href="https://t.me/APWineFinance"
                         icon={FaTelegramPlane}>
                         Join the Telegram
                     </Button>
                     <Button
-                        href="https://test.com"
+                        href="https://app.apwine.fi"
                         icon={FaTools}
                         className="mt-4 md:mt-0 md:ml-4">
                         Try the Alpha
