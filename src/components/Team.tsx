@@ -50,8 +50,8 @@ const Team = () => (
         } description="Originally from Paris, Ulysse graduated in CS at EPFL and is now working as a software engineer at Amazon. He's interested in building user-friendly applications and interfaces." />
         <Title className="mt-16">Advisors</Title>
         <Person image={jiahua} name={
-            <>Jiahua Xu</>
-        } description="Dr Jiahua Xu is a postdoctoral fellow at EPFL, as well as a research associate at UCL Centre for Blockchain Technologies and previously at Harvard Business School. Her research interests lie primarily in blockchain economics, behavioural finance and risk management." />
+            <>Jiahua Xu<IconLink href="https://jiahua-xu.com" icon={FiGlobe} /></>
+        } description="Dr. Jiahua Xu is a research associate at UCL Centre for Blockchain Technologies, as well as a teaching and research affiliate at EPFL. Her research interests lie primarily in blockchain economics, behavioural finance and risk management." />
     </div>
 )
 
