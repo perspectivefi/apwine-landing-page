@@ -7,6 +7,8 @@ import BlogHeader from "../components/BlogHeader"
 import Container from "../components/Container"
 import Divider from "../components/Divider"
 
+import Layout from "../components/Layout"
+
 import { Title } from "../components/Text"
 
 const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => {
@@ -24,14 +26,14 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => {
         </>)
 
     return (
-        <div>
+        <Layout pageName="Blog">
             <BlogHeader />
             <Container className="-mt-2">
                 <div className="flex flex-col">
                     { Posts }
                 </div>
             </Container>
-        </div>
+        </Layout>
     )
 }
 

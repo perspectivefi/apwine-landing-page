@@ -8,9 +8,10 @@ import Container from "../components/Container"
 import { titleClass, paragraphClass } from "../components/Text"
 
 import BlogHeader from "../components/BlogHeader"
+import Layout from "../components/Layout"
 
 export default ({ data: { markdownRemark: { frontmatter, html } } }) => (
-    <div>
+    <Layout pageName={frontmatter.title}>
         <BlogHeader />
         <Container className="-mt-2">
             <h1 className={titleClass}>{ frontmatter.title }</h1>
@@ -20,7 +21,7 @@ export default ({ data: { markdownRemark: { frontmatter, html } } }) => (
                 dangerouslySetInnerHTML={{ __html: html }}
             />
         </Container>
-    </div>
+    </Layout>
 )
 
 export const pageQuery = graphql`
