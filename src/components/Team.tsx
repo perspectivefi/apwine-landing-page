@@ -51,7 +51,7 @@ const Team = () => (
         <Title className="mt-16">Advisors</Title>
         <Person image={jiahua} name={
             <>Jiahua Xu</>
-        } description="Dr Jiahua Xu is a postdoctoral fellow at EPFL, as well as a research associate at Harvard Business School and the UCL Centre for Blockchain Technologies. Her research interests lie primarily in blockchain economics, behavioural finance and risk management." />
+        } description="Dr Jiahua Xu is a postdoctoral fellow at EPFL, as well as a research associate at UCL Centre for Blockchain Technologies and previously at Harvard Business School. Her research interests lie primarily in blockchain economics, behavioural finance and risk management." />
     </div>
 )
 
