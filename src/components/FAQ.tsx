@@ -19,6 +19,10 @@ const questions = [
     [
         "What are the risks of locking my funds in your protocol?",
         "The only risk to take into account is that of yield protocol SC failure."
+    ],
+    [
+        "Why are you building this project? What problem does it solve?",
+        "We want to bring a new DeFi tool to help farmers hedge their risk, while being able to farm with their own yield."
     ]
 ]
 
