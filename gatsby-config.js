@@ -36,7 +36,16 @@ module.exports = {
         path: `${__dirname}/src/blog`,
       },
     },
-    `gatsby-transformer-remark`
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-remark-classes`,
+      options: {
+        classMap: {
+          link: "text-blue-500 font-bold hover:text-blue-600",
+          paragraph: "mb-4"
+        }
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
