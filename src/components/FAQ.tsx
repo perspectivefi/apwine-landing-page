@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, FunctionComponent } from "react"
 
 import classnames from "classnames"
 
@@ -7,29 +7,28 @@ import Divider from "./Divider"
 
 import { FiPlus, FiMinus } from "react-icons/fi"
 
-const FAQ = () => {
-    const [open, setOpen] = useState(null)
-
-    const questions = [
-        [
-            "What would be the interest to lock tokens inside your protocol?",
-            "You can instantly sell your unrealised APY to hedge against price movement."
-        ],
-        [
-            "Why would I be interested in the governance token?",
-            "The token will be useful to decide in which direction the project is going to go, and vote on particular functionalities. Token Holders also get as a reward 1% of the pool of every expiring \"contracts\"."
-        ],
-        [
-            "What are the risks of locking my funds in your protocol?",
-            "The only risk to take into account is that of yield protocol SC failure."
-        ]
+const questions = [
+    [
+        "What would be the interest to lock tokens inside your protocol?",
+        "You can instantly sell your unrealised APY to hedge against price movement."
+    ],
+    [
+        "Why would I be interested in the governance token?",
+        "The token will be useful to decide in which direction the project is going to go, and vote on particular functionalities. Token Holders also get as a reward 1% of the pool of every expiring \"contracts\"."
+    ],
+    [
+        "What are the risks of locking my funds in your protocol?",
+        "The only risk to take into account is that of yield protocol SC failure."
     ]
+]
 
+const FAQ: FunctionComponent<{ limit?: number }> = ({ limit }) => {
+    const [open, setOpen] = useState(null)
     return (
         <div>
             <Title>FAQ</Title>
             <div className="mt-8">
-                { questions.map((([question, answer], i) => {
+                { (limit ? questions.slice(0, limit) : questions).map((([question, answer], i) => {
                     const currentOpen = open === question
                     return (
                         <div>
@@ -54,6 +53,9 @@ const FAQ = () => {
                     )
                 })) }
             </div>
+            { limit ? <Paragraph className="mt-16">
+                For more questions and answers, please read the full <a href="/faq" className="text-blue-500 font-bold hover:text-blue-600">FAQ</a>.
+            </Paragraph> : null }
         </div>
     )
 }
