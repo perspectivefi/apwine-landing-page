@@ -36,14 +36,20 @@ module.exports = {
         path: `${__dirname}/src/blog`,
       },
     },
-    `gatsby-transformer-remark`,
     {
-      resolve: `gatsby-remark-classes`,
+      resolve: `gatsby-transformer-remark`,
       options: {
-        classMap: {
-          link: "text-blue-500 font-bold hover:text-blue-600",
-          paragraph: "mb-4"
-        }
+        plugins: [
+          {
+            resolve: `gatsby-remark-classes`,
+            options: {
+              classMap: {
+                link: "text-blue-500 font-bold hover:text-blue-600",
+                paragraph: "mb-4"
+              }
+            }
+          }
+        ]
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
