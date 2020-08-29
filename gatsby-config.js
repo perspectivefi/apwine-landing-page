@@ -6,6 +6,12 @@ module.exports = {
     baseUrl: `https://apwine.fi`
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-176809570-1",
+      }
+    },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     {
