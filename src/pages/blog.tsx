@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import classnames from "classnames"
 
-import BlogHeader from "../components/BlogHeader"
+import PageHeader from "../components/PageHeader"
 import Container from "../components/Container"
 import Divider from "../components/Divider"
 
@@ -11,7 +11,7 @@ import Layout from "../components/Layout"
 
 import { Title } from "../components/Text"
 
-const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => {
+const BlogPage = ({ data: { allMarkdownRemark: { edges } } }) => {
     const Posts = edges
         .map(({ node: { id, frontmatter: { title, slug, date } } }, i: number) => <>
             { (i > 0 ? <Divider /> : null) }
@@ -27,7 +27,7 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => {
 
     return (
         <Layout pageName="Blog">
-            <BlogHeader />
+            <PageHeader title="APWine" />
             <Container className="-mt-2">
                 <div className="flex flex-col">
                     { Posts }
@@ -37,7 +37,7 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => {
     )
 }
 
-export default IndexPage
+export default BlogPage
 
 export const pageQuery = graphql`
     query {

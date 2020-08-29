@@ -7,12 +7,12 @@ import Container from "../components/Container"
 
 import { titleClass, paragraphClass } from "../components/Text"
 
-import BlogHeader from "../components/BlogHeader"
+import PageHeader from "../components/PageHeader"
 import Layout from "../components/Layout"
 
 export default ({ data: { markdownRemark: { frontmatter, html } } }) => (
     <Layout pageName={frontmatter.title}>
-        <BlogHeader />
+        <PageHeader title="APWine Blog" />
         <Container className="-mt-2">
             <h1 className={titleClass}>{ frontmatter.title }</h1>
             <h2 className="text-gray-500 text-sm">{ frontmatter.date }</h2>

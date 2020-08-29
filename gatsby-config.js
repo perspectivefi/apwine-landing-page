@@ -6,6 +6,12 @@ module.exports = {
     baseUrl: `https://apwine.fi`
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-176809570-1",
+      }
+    },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     {
@@ -36,7 +42,22 @@ module.exports = {
         path: `${__dirname}/src/blog`,
       },
     },
-    `gatsby-transformer-remark`
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-classes`,
+            options: {
+              classMap: {
+                link: "text-blue-500 font-bold hover:text-blue-600",
+                paragraph: "mb-4"
+              }
+            }
+          }
+        ]
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

@@ -24,7 +24,7 @@ const IndexPage = () => (
 
         <Container children={<Divider />} />
 
-        <Container children={<FAQ />} />
+        <Container children={<FAQ limit={3} />} />
 
         {/* <Container children={<Divider />} /> */}
 
