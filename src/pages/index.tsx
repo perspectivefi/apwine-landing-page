@@ -11,6 +11,7 @@ import HowItWorks from "../components/HowItWorks"
 import FAQ from "../components/FAQ"
 import Team from "../components/Team"
 import Footer from "../components/Footer"
+import NewsletterSubscribe from "../components/NewsletterSubscribe"
 
 const IndexPage = () => (
     <Layout className="bg-white">
@@ -22,7 +23,11 @@ const IndexPage = () => (
 
         <Container children={<HowItWorks />} />
 
-        <Container children={<Divider />} />
+        <Container children={<Divider />} className="mb-0" />
+
+        <Container children={<NewsletterSubscribe />} className="my-0 py-0" />
+
+        <Container children={<Divider />} className="mt-0" />
 
         <Container children={<FAQ limit={3} />} />
 
