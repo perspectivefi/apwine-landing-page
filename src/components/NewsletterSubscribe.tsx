@@ -27,11 +27,11 @@ const NewsletterSubscribe = () => {
                         </span>
                     </button>
                 </form>
-                { ["sending", "error", "success"].includes(status) ? <div className="text-left h-2 mt-6 mb-4 text-blue-500">
+                { ["sending", "error", "success"].includes(status) ? <Paragraph className="text-left mt-8 mb-2 text-blue-500">
                     {status === "sending" && <div>Please wait...</div>}
                     {status === "error" && <div className="text-red-500" dangerouslySetInnerHTML={{__html: message}}/>}
                     {status === "success" && <div>Thank you for signing up!</div>}
-                </div> : null }
+                </Paragraph> : null }
             </>} />
     </>
 }
