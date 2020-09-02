@@ -10,7 +10,7 @@ With the alpha set to release this month on the Testnet, we would like to introd
 
 The owner rights on the smart contracts of the APWine protocol are initially divided equally between the core members of the team.
 
-After a defined development period of **80 weeks**, the governance of those contracts will be handed over to a DAO, where the token holders can vote on the changes to be made (treasury allocation, protocol upgrade, etc.). The token distribution is designed so that the community and stakeholders of the APWine  platform progressively earntokens that will give them a voting power on the DAO that will be realized after the initial development period.
+After a defined development period of **80 weeks**, the governance of those contracts will be handed over to a DAO, where the token holders can vote on the changes to be made (treasury allocation, protocol upgrade, etc.). The token distribution is designed so that the community and stakeholders of the APWine  platform progressively earn tokens that will give them a voting power on the DAO that will be realized after the initial development period.
 
 # Allocation
 
