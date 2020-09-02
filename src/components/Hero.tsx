@@ -9,6 +9,7 @@ import Wave from "./Wave"
 
 import { FaTelegramPlane, FaTools } from "react-icons/fa"
 import { FiTwitter } from "react-icons/fi"
+import { RiNewspaperLine } from "react-icons/ri"
 
 import logo from "../images/logo_outline_small.png"
 import Bubbles from "./Bubbles"
@@ -42,7 +43,7 @@ const Hero = () => (
                     Launching in September 2020 <a href="https://twitter.com/apwinefinance" target="_blank" className="ml-2 hover:text-blue-500"><FiTwitter /></a>
                 </h3>
                 <div className={classnames(
-                    "flex md:flex-row flex-col",
+                    "flex flex-col",
                     "mt-4"
                 )}>
                     <Button
@@ -51,9 +52,15 @@ const Hero = () => (
                         Join the Telegram
                     </Button>
                     <Button
+                        href="/APWine___Whitepaper.pdf"
+                        className="mt-4"
+                        icon={RiNewspaperLine}>
+                        Read the Whitepaper
+                    </Button>
+                    <Button
                         href="#"
+                        className="mt-4"
                         icon={FaTools}
-                        className="mt-4 md:mt-0 md:ml-4"
                         color="bg-gray-800"
                         local={false}>
                         Alpha available soon
