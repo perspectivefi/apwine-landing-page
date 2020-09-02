@@ -2,8 +2,8 @@ import React from "react"
 
 import Container from "./Container"
 
-const Divider = () => (
-    <hr className="" />
+const Divider = ({ className = "" }) => (
+    <hr className={className} />
 )
 
 export default Divider
