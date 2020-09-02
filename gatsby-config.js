@@ -51,7 +51,11 @@ module.exports = {
             options: {
               classMap: {
                 link: "text-blue-500 font-bold hover:text-blue-600",
-                paragraph: "mb-4"
+                paragraph: "mb-4",
+                "heading[depth=1]": "text-gray-800 text-2xl font-bold text-left mt-16 mb-4",
+                "list[ordered=false]": "list-disc mb-4",
+                listItem: "ml-6",
+                strong: "font-semibold"
               }
             }
           }
