@@ -9,16 +9,18 @@ const Button: FunctionComponent<{
     href?: string
     color?: string
     local?: boolean
+    text?: string
+    padding?: string
     style?: CSSProperties
-}> = ({ className, local = true, icon, color, children, ...props }) => {
+}> = ({ className, local = true, icon, color, text, padding, children, ...props }) => {
     const Icon = icon
     return (
         <a className={classnames(
             "flex flex-row items-center justify-center",
             "bg-white",
             "rounded-full",
-            "px-6 py-3",
-            "text-lg font-bold",
+            padding || "px-6 py-3",
+            text || "text-lg font-bold",
             "text-white",
             color || "bg-blue-500 hover:bg-blue-600",
             className
