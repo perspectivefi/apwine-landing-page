@@ -14,7 +14,7 @@ After a defined development period of **80 weeks**, the governance of those cont
 
 # Allocation
 
-A total of **1'000'000 APW** are minted at launch.
+The total supply will be of **1'000'000 APW**.
 
 They will be allocated according to the following distribution:
 
