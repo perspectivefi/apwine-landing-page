@@ -9,6 +9,8 @@ import { titleClass, paragraphClass } from "../components/Text"
 
 import PageHeader from "../components/PageHeader"
 import Layout from "../components/Layout"
+import NewsletterSubscribe from "../components/NewsletterSubscribe"
+import Divider from "../components/Divider"
 
 export default ({ data: { markdownRemark: { frontmatter, html } } }) => (
     <Layout pageName={frontmatter.title}>
@@ -20,6 +22,8 @@ export default ({ data: { markdownRemark: { frontmatter, html } } }) => (
                 className={classnames(paragraphClass, "mt-8")}
                 dangerouslySetInnerHTML={{ __html: html }}
             />
+            <Divider className="my-24" />
+            <NewsletterSubscribe />
         </Container>
     </Layout>
 )
