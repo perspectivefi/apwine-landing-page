@@ -34,10 +34,6 @@ const IndexPage = () => (
         {/* <Container children={<Divider />} /> */}
 
         <Container children={<Team />} />
-
-        { /* <Divider /> */ }
-
-        <Container children={<Footer />} />
     </Layout>
 )
 
