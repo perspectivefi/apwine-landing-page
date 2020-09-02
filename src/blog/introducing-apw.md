@@ -18,13 +18,13 @@ The total supply will be of **1'000'000 APW**.
 
 They will be allocated according to the following distribution:
 
-- **100'000** first tokens are sold to the community through a Balancer initial listing, with a 5:95 ETH/APW ratio, providing the development team with some initial capital for the development costs (mainly gas and audits).
+- **100'000** first tokens are sold to the community through a 5:95 ETH/APW Balancer Liquidity Bootstrapping Pool (LBP). It's a pool created on the protocol Balancer and allows the team to choose the price of the token during the sale while staying decentralized. Those tokens are sold to provide the development team with some initial capital for the development costs (mainly gas and audits).
 - **28'000 APW** are locked for a vesting period of 80 weeks for the core team and advisors.
 - **872'000 APW** are unlocked progressively on a weekly basis (for 80 weeks).
 
 Of those weekly 10'900 APW,
-- **10'000 APW** are allocated to liquidity mining. This means users of the platform who deposit funds will be rewarded APW proportionally.
-- **900 APW** are allocated to the team fund.
+- **10'000 APW** are allocated to liquidity mining. This means users of the platform who deposit funds will be rewarded with APW tokens proportionally.
+- **900 APW** are allocated to the team fund for their work on the project.
 
 This distribution will later be reflected in the official [whitepaper](http://localhost:8000/APWine___Whitepaper.pdf).
 
