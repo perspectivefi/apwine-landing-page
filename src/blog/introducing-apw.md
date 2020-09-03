@@ -26,7 +26,7 @@ Of those weekly 10'900 APW,
 - **10'000 APW** are allocated to liquidity mining. This means users of the platform who deposit funds will be rewarded with APW tokens proportionally.
 - **900 APW** are allocated to the team fund for their work on the project.
 
-This distribution will later be reflected in the official [whitepaper](http://localhost:8000/APWine___Whitepaper.pdf).
+This distribution will later be reflected in the official [whitepaper](https://apwine.fi/APWine___Whitepaper.pdf).
 
 # Economics
 
