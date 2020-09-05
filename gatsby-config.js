@@ -35,6 +35,8 @@ module.exports = {
         icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
     },
+
+    /* blog plugins */
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -53,15 +55,25 @@ module.exports = {
                 link: "text-blue-500 font-bold hover:text-blue-600",
                 paragraph: "mb-4",
                 "heading[depth=1]": "text-gray-800 text-2xl font-bold text-left mt-16 mb-4",
+                "heading[depth=2]": "text-gray-800 text-xl font-bold text-left mt-8 mb-4",
                 "list[ordered=false]": "list-disc mb-4",
                 listItem: "ml-6",
                 strong: "font-semibold"
               }
             }
-          }
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 1024,
+            },
+          },
         ]
       }
-    }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
