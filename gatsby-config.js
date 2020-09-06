@@ -56,6 +56,7 @@ module.exports = {
                 paragraph: "mb-4",
                 "heading[depth=1]": "text-gray-800 text-2xl font-bold text-left mt-16 mb-4",
                 "heading[depth=2]": "text-gray-800 text-xl font-bold text-left mt-8 mb-4",
+                "heading[depth=3]": "text-gray-600 text-lg font-bold text-left mt-8 mb-4",
                 "list[ordered=false]": "list-disc mb-4",
                 listItem: "ml-6",
                 strong: "font-semibold"
