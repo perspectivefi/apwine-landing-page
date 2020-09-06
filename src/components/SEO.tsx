@@ -18,7 +18,7 @@ const SEO = ({ pageName }) => {
 
     const defaults = data.site.siteMetadata;
 
-    const title = defaults.title + (pageName ? `- ${pageName}` : "");
+    const title = defaults.title + (pageName ? ` - ${pageName}` : "");
     const description = defaults.description;
     const url = defaults.baseUrl;
 
