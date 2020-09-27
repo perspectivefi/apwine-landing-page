@@ -1,10 +1,10 @@
 ---
 slug: "/blog/alpha-is-here"
-date: "2020-09-06"
+date: "2020-09-27"
 title: "Alpha is Here"
 ---
 
-The Alpha version of **APWine** is now deployed and open to the public on the **Rinkeby** test network, on [APWine Alpha](https://alpha.apwine.fi/).
+The Alpha version of **APWine** is now deployed and open to the public on the **Kovan** test network, on [APWine Alpha](https://alpha.apwine.fi/).
 
 ![APWine Muscat](./muscat.png)
 
@@ -14,13 +14,15 @@ We've designed the interface to make it as simple as possible to use and underst
 
 # Tutorial
 
-First of all, make sure you are on the **Rinkeby** test network. This can usually be set from the settings menu of your wallet.
+First of all, make sure you are on the **Kovan** test network. This can usually be set from the settings menu of your wallet.
 
 ## 1. Getting some ETH and cDAI
 
-You will need **ETH** to fuel interactions on the platform. There are several faucets online, including [Rinkeby Faucet](https://faucet.rinkeby.io/) and [MetaMask Faucet](https://faucet.metamask.io/). If these don't work, please reach out to a team member and we'll help you get on track.
+You will need **ETH** to fuel interactions on the platform. There are several faucets online, including [Kovan Faucet](https://faucet.kovan.network/) and [Gitter Kovan Faucet](https://gitter.im/kovan-testnet/faucet#). If these don't work, please reach out to a team member and we'll help you get on track.
 
-**cDAI** can be obtained directly on the [Compound App](https://app.compound.finance/). Once connected to your wallet, head to your dashboard and, in the **Supply** section, click on **Dai**. A window should appear with a **Faucet** button at the bottom. Click on it and send the transaction. Once accepted, you will have some **Dai** in your wallet. Free (test) money!
+**cDAI** can be obtained directly on the [Compound App](https://app.compound.finance/). Once connected to your wallet, head to your dashboard and, in the **Supply** section, click on the **Collateral** toggle next to **Ether**. Confirm you want to use **ETH** as collateral. Back to your dashboard, in the **Supply** section, click on **Ether**. This time, a window should open. Enter any amount of **ETH**, but keep some for your future transactions (e.g. keep 0.1 if you've received 1 before). Click on **Supply** and wait for the transaction to be accepted.
+
+You've provided **ETH** as collateral, you now need to borrow some **Dai**. In the **Borrowing** section, click on **Dai Stablecoin**, then either enter an amount you want to borrow or click on **Safe Max**. Press **Borrow**. Once accepted, you will have some **Dai** in your wallet. Free (test) money!
 
 Next, from your dashboard, click again on **Dai** and, this time, enter an amount of **Dai** you want to supply. You can click on **MAX** to supply all of your **Dai** automatically. Then click on **Supply** and send the transaction. Your funds are now locked on Compound and you get some **cDAI** in return.
 
@@ -58,7 +60,7 @@ Your funds are locked, the period has started, and you now have a corresponding 
 
 Head over to the **Trade** page from the navigation bar.
 
-The corresponding settings should already be selected for you. If the interests are ready to trade, a button to **Uniswap** should be visible. Click on it to access the Uniswap listing and trade it.
+The corresponding settings should already be selected for you. If the interests are ready to trade, a button **0x** should be visible. Click on it to be redirected to a custom **0x** exchange that we've set up for the **Alpha**.
 
 ## 5. Claiming your yield
 
