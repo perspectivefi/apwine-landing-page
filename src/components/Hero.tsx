@@ -7,8 +7,9 @@ import Container from "./Container"
 import Button from "./Button"
 import Wave from "./Wave"
 
-import { FaTelegramPlane, FaTools } from "react-icons/fa"
+import { FaTelegramPlane } from "react-icons/fa"
 import { FiTwitter } from "react-icons/fi"
+import { AiFillStar } from "react-icons/ai"
 import { RiNewspaperLine } from "react-icons/ri"
 
 import logo from "../images/logo_outline_small.png"
@@ -58,12 +59,11 @@ const Hero = () => (
                         Read the Whitepaper
                     </Button>
                     <Button
-                        href="#"
+                        href="https://alpha.apwine.fi"
                         className="mt-4"
-                        icon={FaTools}
-                        color="bg-gray-800"
+                        icon={AiFillStar}
                         local={false}>
-                        Alpha available soon
+                        Try the Alpha
                     </Button>
                 </div>
             </Container>
