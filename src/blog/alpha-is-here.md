@@ -58,9 +58,7 @@ At the start date of the period, you will automatically be sent your tokenized y
 
 Your funds are locked, the period has started, and you now have a corresponding tokenized yield in your wallet. Great! Let's start trading.
 
-Head over to the **Trade** page from the navigation bar.
-
-The corresponding settings should already be selected for you. If the interests are ready to trade, a button **0x** should be visible. Click on it to be redirected to a custom **0x** exchange that we've set up for the **Alpha**.
+We've deployed a custom **0x** exchange which you can access from the **Trade** button in the navigation bar.
 
 ## 5. Claiming your yield
 
