@@ -26,6 +26,8 @@ You've provided **ETH** as collateral, you now need to borrow some **Dai**. In t
 
 Next, from your dashboard, click again on **Dai** and, this time, enter an amount of **Dai** you want to supply. You can click on **MAX** to supply all of your **Dai** automatically. Then click on **Supply** and send the transaction. Your funds are now locked on Compound and you get some **cDAI** in return.
 
+*Note: We've had some reports of Compound not working properly on Kovan. If these steps don't work, you can swap your ETH for cDAI on [Uniswap](https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xf0d0eb522cfa50b716b3b1604c4f0fa6f04376ad).*
+
 You're now (test) **cDAI** rich, and ready to use **APWine**!
 
 ## 2. Depositing on APWine
