@@ -10,7 +10,7 @@ import { FiPlus, FiMinus } from "react-icons/fi"
 const questions = [
     [
         "What would be the point of locking tokens inside your protocol?",
-        "You can instantly sell your unrealised APY to hedge against price movement."
+        "You can instantly sell your unrealised yield to hedge against price movement."
     ],
     [
         "What is the idea behind APWine, in one sentence?",

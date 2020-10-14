@@ -36,7 +36,7 @@ const Hero = () => (
                 <h2 className={classnames(
                     "mt-8 text-4xl font-bold leading-normal text-white text-center"
                 )}>
-                    APWine is a protocol allowing to trade unrealised APY.
+                    APWine is a protocol allowing to trade unrealised yield.
                 </h2>
                 <h3 className={classnames(
                     "mt-8 text-lg font-normal text-gray-400 flex flex-row items-center"
