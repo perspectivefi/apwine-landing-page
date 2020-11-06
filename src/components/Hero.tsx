@@ -52,12 +52,12 @@ const Hero = () => (
                         icon={FaTelegramPlane}>
                         Join the Telegram
                     </Button>
-                    <Button
+                    {/* <Button
                         href="/APWine___Whitepaper.pdf"
                         className="mt-4"
                         icon={RiNewspaperLine}>
                         Read the Whitepaper
-                    </Button>
+                    </Button> */}
                     <Button
                         href="https://alpha.apwine.fi"
                         className="mt-4"
