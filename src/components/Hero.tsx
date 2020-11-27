@@ -41,7 +41,7 @@ const Hero = () => (
                 <h3 className={classnames(
                     "mt-8 text-lg font-normal text-gray-400 flex flex-row items-center"
                 )}>
-                    Launching in September 2020 <a href="https://twitter.com/apwinefinance" target="_blank" className="ml-2 hover:text-blue-500"><FiTwitter /></a>
+                    Launching in January 2021 <a href="https://twitter.com/apwinefinance" target="_blank" className="ml-2 hover:text-blue-500"><FiTwitter /></a>
                 </h3>
                 <div className={classnames(
                     "flex flex-col",
