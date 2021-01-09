@@ -1,7 +1,6 @@
-@tailwind base;
-
-@tailwind components;
-@tailwind utilities;
+html, body {
+    @apply bg-black;
+}
 
 .gatsby-resp-image-image, .gatsby-resp-image-background-image {
     @apply rounded-lg;
@@ -9,4 +8,9 @@
 
 .gatsby-resp-image-wrapper {
     @apply my-8;
+}
+
+.pattern-dots {
+    background-image: radial-gradient(currentColor 1px, transparent 1px);
+    background-size: calc(20 * 1px) calc(20 * 1px);
 }
