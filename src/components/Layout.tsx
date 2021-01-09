@@ -9,7 +9,7 @@ const Layout: FunctionComponent<{ pageName?: string, className?: string }> = ({ 
     <div {...props}>
       {children}
       <SEO pageName={pageName} />
-      <Container children={<Footer />} />
+      <Container children={<Footer />} className="mt-8 pb-16" />
     </div>
   )
 }

@@ -1,15 +1,23 @@
 import React from "react"
 
-import classnames from "classnames"
-
-import { Paragraph } from "./Text"
+import { FaGithub, FaMedium, FaMediumM, FaTelegram, FaTelegramPlane, FaTwitter } from "react-icons/fa"
 
 const Footer = () => (
-    <div>
-        <p className="text-gray-400 text-sm leading-tight">
-            © APWine, 2020. Website by <a href="https://uly.dev" className="hover:text-blue-500" target="_blank">ulydev</a>, inspired by <a href="https://cap.finance" className="hover:text-blue-500" target="_blank">cap.finance</a>
-        </p>
-        
+    <div className="flex flex-col">
+        <div className="flex flex-row items-center justify-between w-full max-w-xs text-primary mx-auto">
+            <FaGithub />
+            <FaTwitter />
+            <FaMediumM />
+            <FaTelegramPlane />
+        </div>
+        <div className="flex flex-row justify-between text-xs text-primary-light mt-24">
+            <span>© APWine, 2021. All rights reserved.</span>
+            <div className="flex flex-row space-x-12">
+                <a href="">Legal</a>
+                <a href="">Terms of Use</a>
+                <a href="">Privacy Policy</a>
+            </div>
+        </div>
     </div>
 )
 
