@@ -39,21 +39,12 @@ const IndexPage = () => (
                 title="Claim your yield at maturity"
                 text="Claim your yield at maturity by burning your Future Yield Tokens." />
 
-            <Container children={<Features />} />
+            <Container children={<Features />} className="mt-40" />
 
-            <Container children={<Team />} />
+            <Container children={<Team />} className="mt-40" />
 
-            <Container children={<HowItWorks />} />
+            <Container children={<NewsletterSubscribe />} className="mt-32" />
 
-            <Container children={<Divider />} className="mb-0" />
-
-            <Container children={<NewsletterSubscribe />} className="my-0 py-0" />
-
-            <Container children={<Divider />} className="mt-0" />
-
-            <Container children={<FAQ limit={3} />} />
-
-            {/* <Container children={<Divider />} /> */}
         </div>
 
     </Layout>
