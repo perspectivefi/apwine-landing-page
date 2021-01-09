@@ -4,13 +4,11 @@ import classnames from "classnames"
 
 import Container from "./Container"
 import Wave from "./Wave"
-import Bubbles from "./Bubbles"
 
 import logo from "../images/logo_outline_small.png"
 
 const PageHeader = ({ title = "APWine" }) => (
     <div className="bg-gray-900 flex flex-col relative">
-        <Bubbles />
         <Container className="flex flex-row items-center justify-start w-full -mb-2 z-10">
             <img src={logo} className="w-16" />
             <div className="ml-2 flex flex-col">

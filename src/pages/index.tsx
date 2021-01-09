@@ -12,28 +12,50 @@ import FAQ from "../components/FAQ"
 import Team from "../components/Team"
 import Footer from "../components/Footer"
 import NewsletterSubscribe from "../components/NewsletterSubscribe"
+import Header from "../components/Header"
+import Diagram from "../components/Diagram"
+
+import lockDiagram from "../images/diagrams/lock.svg"
+import sellDiagram from "../images/diagrams/sell.svg"
+import claimDiagram from "../images/diagrams/claim.svg"
 
 const IndexPage = () => (
-    <Layout className="bg-white">
-        <Hero />
+    <Layout className="relative pattern-dots text-opacity-20 text-primary">
 
-        <Container children={<Features />} />
+        <div className="absolute bg-gradient-to-b from-primary to-black h-screen w-full opacity-20" /> { /* TODO: radial gradient with styled.div */ }
 
-        <Container children={<Divider />} />
+        <div className="relative z-10">
+            <Header />
 
-        <Container children={<HowItWorks />} />
+            <Hero />
 
-        <Container children={<Divider />} className="mb-0" />
+            <Diagram mode="right" img={lockDiagram}
+                title="Lock your interest bearing tokens"
+                text="Tokenise the yield generated with your interest bearing token. You deposit and lock your interest bearing token to claim Future Yield Tokens." />
+            <Diagram mode="left"  img={sellDiagram}
+                title="Sell your APYs ahead of time"
+                text="Sell, buy and trade Future Yield Tokens ahead of time to speculate on the APY of different platform." />
+            <Diagram mode="right" img={claimDiagram}
+                title="Claim your yield at maturity"
+                text="Claim your yield at maturity by burning your Future Yield Tokens." />
 
-        <Container children={<NewsletterSubscribe />} className="my-0 py-0" />
+            <Container children={<Features />} />
 
-        <Container children={<Divider />} className="mt-0" />
+            <Container children={<Team />} />
 
-        <Container children={<FAQ limit={3} />} />
+            <Container children={<HowItWorks />} />
 
-        {/* <Container children={<Divider />} /> */}
+            <Container children={<Divider />} className="mb-0" />
 
-        <Container children={<Team />} />
+            <Container children={<NewsletterSubscribe />} className="my-0 py-0" />
+
+            <Container children={<Divider />} className="mt-0" />
+
+            <Container children={<FAQ limit={3} />} />
+
+            {/* <Container children={<Divider />} /> */}
+        </div>
+
     </Layout>
 )
 
