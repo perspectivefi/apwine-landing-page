@@ -30,7 +30,7 @@ const Team = () => (
     <div className="mx-auto lg:mx-0 flex flex-col sm:w-full sm:max-w-lg lg:max-w-none lg:w-auto sm:grid sm:grid-cols-2 lg:flex lg:flex-row space-y-16 sm:space-y-0 lg:space-x-16">
         <div className="mx-auto lg:mx-0 flex flex-col space-y-2 w-52 lg:w-auto">
             <span className="text-white text-xl font-bold">Advisors</span>
-            <div className="grid grid-cols-2 gap-4 lg:flex lg:flex-row lg:space-x-4">
+            <div className="grid grid-cols-2 gap-4 lg:gap-0 lg:flex lg:flex-row lg:space-x-4">
                 <Person img={julien} name="Julien B." twitter="bneiluj" />
                 <Person img={marc} name="Marc Z." twitter="lemiscate" />
                 <Person img={jiahua} name="Jiahua X." twitter="jiahuajavaxu" />
@@ -38,7 +38,7 @@ const Team = () => (
         </div>
         <div className="mx-auto lg:mx-0 flex flex-col space-y-2 w-52 lg:w-auto">
             <span className="text-white text-xl font-bold">Members</span>
-            <div className="grid grid-cols-2 gap-4 lg:flex lg:flex-row lg:space-x-4">
+            <div className="grid grid-cols-2 gap-4 lg:gap-0 lg:flex lg:flex-row lg:space-x-4">
                 <Person img={jean} name="Jean C." twitter="jean_chambras" />
                 <Person img={gaspard} name="Gaspard P." twitter="gaspardpeduzzi" />
                 <Person img={ulysse} name="Ulysse R." twitter="ulydev" />
