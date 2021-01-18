@@ -8,8 +8,8 @@ const NewsletterSubscribe = () => {
     const url = "https://apwine.us17.list-manage.com/subscribe/post?u=49b391a473b9f605aed855129&amp;id=2bb1b99f44"
     const [email, setEmail] = useState("")
     return (
-        <div className="flex flex-col items-center p-16 pb-8 rounded-t-xl bg-gradient-to-b from-primary-400 to-transparent max-w-3xl mx-auto">
-            <span className="text-white font-bold text-4xl">Let’s keep in touch</span>
+        <div className="flex flex-col items-center px-8 md:px-16 py-16 pb-8 rounded-t-xl bg-gradient-to-b from-primary-400 to-transparent max-w-3xl mx-auto">
+            <span className="text-white text-center font-bold text-4xl">Let’s keep in touch</span>
             <span className="font-text text-primary-100 text-sm mt-6 max-w-md text-center">Subscribe to get the latest blog posts, news and platform announcements straight to your inbox.</span>
             <MailchimpSubscribe
                 url={url}

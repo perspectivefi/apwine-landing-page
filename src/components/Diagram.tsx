@@ -3,8 +3,8 @@ import React from "react"
 import classnames from "classnames"
 
 const Diagram = ({ img, mode = "left", title, text }) => (
-    <div className="flex flex-col items-center mx-auto my-24">
-        <div className={`flex ${ mode === "left" ? "flex-row-reverse space-x-reverse" : "flex-row" } space-x-12 items-center`}>
+    <div className="flex flex-col items-center mx-auto my-24 px-8 lg:px-0">
+        <div className={`flex flex-col space-y-16 lg:space-y-0 ${ mode === "left" ? "lg:flex-row-reverse lg:space-x-reverse" : "lg:flex-row" } lg:space-x-12 lg:items-center`}>
             <div className="flex flex-col space-y-4 w-full max-w-xs text-white">
                 <div className="w-5 h-1 bg-gradient-to-r from-primary-300 to-primary-200" />
                 <span className="font-bold text-4xl">{ title }</span>

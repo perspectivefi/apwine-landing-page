@@ -10,7 +10,7 @@ const Footer = () => (
             <a href="https://apwine.medium.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-100 transition duration-300"><FaMediumM /></a>
             <a href="https://t.me/APWineFinance" target="_blank" rel="noopener noreferrer" className="hover:text-primary-100 transition duration-300"><FaTelegramPlane /></a>
         </div>
-        <div className="flex flex-row justify-between text-xs text-primary-100 mt-24">
+        <div className="flex flex-row justify-between text-xs text-primary-100 mt-24 mx-auto md:mx-0">
             <span>© APWine, 2021. All rights reserved.</span>
             { /*
             TODO: add later
