@@ -8,9 +8,9 @@ const NewsletterSubscribe = () => {
     const url = "https://apwine.us17.list-manage.com/subscribe/post?u=49b391a473b9f605aed855129&amp;id=2bb1b99f44"
     const [email, setEmail] = useState("")
     return (
-        <div className="flex flex-col items-center p-16 pb-8 rounded-t-xl bg-gradient-to-b from-primary-dark to-transparent max-w-3xl mx-auto">
+        <div className="flex flex-col items-center p-16 pb-8 rounded-t-xl bg-gradient-to-b from-primary-400 to-transparent max-w-3xl mx-auto">
             <span className="text-white font-bold text-4xl">Let’s keep in touch</span>
-            <span className="font-text text-primary-light text-sm mt-6 max-w-md text-center">Subscribe to get the latest blog posts, news and platform announcements straight to your inbox.</span>
+            <span className="font-text text-primary-100 text-sm mt-6 max-w-md text-center">Subscribe to get the latest blog posts, news and platform announcements straight to your inbox.</span>
             <MailchimpSubscribe
                 url={url}
                 render={({ subscribe, status, message }) => <>
@@ -18,14 +18,15 @@ const NewsletterSubscribe = () => {
                         <input aria-label="email" type="email" required placeholder="Enter your email..." onChange={e => setEmail(e.target.value)}
                             className={classnames(
                                 "w-full max-w-xs px-6 py-3 text-sm bg-white rounded-xl",
-                                "placeholder-gray-500"
+                                "placeholder-gray-500 text-primary-500"
                             )} />
                         <button className={classnames(
                             "relative",
                             "w-40",
                             "py-3 text-sm font-semibold text-white",
                             "rounded-xl",
-                            "bg-gradient-to-r from-primary-dark to-primary"
+                            "bg-gradient-to-r from-primary-300 to-primary-200",
+                            "hover:opacity-50 transition duration-300"
                         )} type="submit">
                             <span className={status === "sending" ? "opacity-0" : ""}>Sign up</span>
                             <span className={classnames("absolute inset-0 flex items-center justify-center pointer-events-none", status === "sending" ? "opacity-100" : "opacity-0")}>
@@ -36,11 +37,11 @@ const NewsletterSubscribe = () => {
                             </span>
                         </button>
                     </form>
-                    { ["sending", "error", "success"].includes(status) ? <Paragraph className="text-left mt-8 mb-2 text-blue-500">
+                    { ["sending", "error", "success"].includes(status) ? <span className="text-center mt-8 mb-2 text-white text-sm">
                         {status === "sending" && <div>Please wait...</div>}
                         {status === "error" && <div className="text-red-500" dangerouslySetInnerHTML={{__html: message}}/>}
                         {status === "success" && <div>Thank you for signing up!</div>}
-                    </Paragraph> : null }
+                    </span> : null }
                 </>} />
         </div>
     )

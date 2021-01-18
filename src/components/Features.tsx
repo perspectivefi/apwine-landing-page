@@ -6,10 +6,10 @@ import hedgeIcon from "../images/icons/hedge.svg"
 import coinsIcon from "../images/icons/coins.svg"
 
 const Feature = ({ icon, title, description }) => (
-    <div className={classnames("flex-1 flex flex-col items-center px-16 py-12 bg-primary-dark bg-opacity-25 rounded-xl")}>
+    <div className={classnames("flex-1 flex flex-col items-center px-16 py-12 bg-primary-400 bg-opacity-50 rounded-xl")}>
         <img src={icon} alt={title} className="w-16 h-16" />
         <span className="text-3xl font-bold text-white mt-8">{ title }</span>
-        <span className="text-sm font-text text-primary-light text-center mt-4">{ description }</span>
+        <span className="text-sm font-text text-primary-100 text-center mt-4">{ description }</span>
     </div>
 )
 

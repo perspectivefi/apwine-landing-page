@@ -46,9 +46,9 @@ const BlogPage = ({
   return (
     <Layout
       pageName="Blog"
-      className="relative pattern-dots text-opacity-20 text-primary"
+      className="relative pattern-dots text-opacity-20 text-primary-200"
     >
-      <div className="absolute bg-gradient-to-b from-primary to-black h-screen w-full opacity-20" />{" "}
+      <div className="absolute bg-gradient-to-b from-primary-200 to-black h-screen w-full opacity-20" />{" "}
       <div className="relative z-10">
         <Header />
         <Container children={Hero} className="mt-40" />

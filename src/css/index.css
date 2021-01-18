@@ -1,5 +1,9 @@
-html, body {
+html {
     @apply bg-black;
+}
+body {
+    @apply bg-primary-500;
+    @apply bg-opacity-75;
 }
 
 .gatsby-resp-image-image, .gatsby-resp-image-background-image {
@@ -13,4 +17,8 @@ html, body {
 .pattern-dots {
     background-image: radial-gradient(currentColor 1px, transparent 1px);
     background-size: calc(20 * 1px) calc(20 * 1px);
+}
+
+.text-glow {
+    text-shadow: 0px 0px 48px #372EC0;
 }
