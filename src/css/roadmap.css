@@ -1,0 +1,8 @@
+@import "../../node_modules/react-vertical-timeline-component/style.min.css";
+
+.vertical-timeline::before {
+  background: rgb(75, 52, 206);
+}
+.vertical-timeline-element-icon{
+    border-color:  rgb(75, 52, 206);
+}

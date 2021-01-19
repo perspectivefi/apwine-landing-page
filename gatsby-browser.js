@@ -7,6 +7,7 @@
 import "./src/css/tailwind.css"
 import "./src/css/fonts.css"
 import "./src/css/index.css"
+import "./src/css/roadmap.css"
 
 import ReactGA from "react-ga"
 ReactGA.initialize("UA-173003870-1")
