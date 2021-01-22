@@ -38,21 +38,8 @@ const IndexPage = () => (
         <Container children={<Features />} className="mt-40" />
 
         <Container children={<Team />} className="mt-40" />
-            <Diagram mode="right" img={lockDiagram}
-                title="Lock your interest bearing tokens"
-                text="Tokenise the yield generated with your interest bearing token. You deposit and lock your interest bearing token to claim Future Yield Tokens." />
-            <Diagram mode="left"  img={sellDiagram}
-                title="Sell your APYs ahead of time"
-                text="Sell, buy and trade Future Yield Tokens ahead of time to speculate on the APY of different platform." />
-            <Diagram mode="right" img={claimDiagram}
-                title="Claim your yield at maturity"
-                text="Claim your yield at maturity by burning your Future Yield Tokens." />
 
-            <Container children={<Features />} className="mt-40" />
-
-            <Container children={<Team />} className="mt-40" />
-
-            <Container children={<Roadmap />} className="mt-40" />
+        <Container children={<Roadmap />} className="mt-40" />
 
     </Layout>
 )
