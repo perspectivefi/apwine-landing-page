@@ -27,7 +27,7 @@ const Person = ({ img, name, twitter }) => (
 )
 
 const Team = () => (
-    <div className="mx-auto lg:mx-0 flex flex-col sm:w-full sm:max-w-lg lg:max-w-none lg:w-auto sm:grid sm:grid-cols-2 lg:flex lg:flex-row space-y-16 sm:space-y-0 lg:space-x-16">
+    <div className="mx-auto flex flex-col items-center justify-center sm:w-full sm:max-w-lg lg:max-w-none lg:w-auto sm:grid sm:grid-cols-2 lg:flex lg:flex-row space-y-16 sm:space-y-0 lg:space-x-16">
         <div className="mx-auto lg:mx-0 flex flex-col space-y-2 w-52 lg:w-auto">
             <span className="text-white text-xl font-bold">Advisors</span>
             <div className="grid grid-cols-2 gap-4 lg:gap-0 lg:flex lg:flex-row lg:space-x-4">
@@ -37,18 +37,12 @@ const Team = () => (
             </div>
         </div>
         <div className="mx-auto lg:mx-0 flex flex-col space-y-2 w-52 lg:w-auto">
-            <span className="text-white text-xl font-bold">Members</span>
+            <span className="text-white text-xl font-bold">Team</span>
             <div className="grid grid-cols-2 gap-4 lg:gap-0 lg:flex lg:flex-row lg:space-x-4">
                 <Person img={jean} name="Jean C." twitter="jean_chambras" />
                 <Person img={gaspard} name="Gaspard P." twitter="gaspardpeduzzi" />
                 <Person img={ulysse} name="Ulysse R." twitter="ulydev" />
                 <Person img={antoine} name="Antoine M." twitter="L0GYKAL" />
-            </div>
-        </div>
-        <div className="mx-auto lg:mx-0 flex flex-col space-y-2 w-52 lg:w-auto sm:pt-8 lg:pt-0">
-            <span className="text-white text-xl font-bold">Investor</span>
-            <div className="flex flex-row space-x-4">
-                <Person img={julien} name="Julien B." twitter="bneiluj" />
             </div>
         </div>
     </div>
