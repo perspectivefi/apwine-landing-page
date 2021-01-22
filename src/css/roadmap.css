@@ -1,8 +1,20 @@
 @import "../../node_modules/react-vertical-timeline-component/style.min.css";
 
 .vertical-timeline::before {
-  background: rgb(75, 52, 206);
+  @apply bg-gradient-to-b;
+  @apply from-primary-300;
+  @apply to-primary-500;
 }
 .vertical-timeline-element-icon{
-    border-color:  rgb(75, 52, 206);
+  @apply border-opacity-50;
+}
+.vertical-timeline-element-content-arrow {
+  width: 24px;
+  height: 4px;
+  border: none;
+
+  background-image: linear-gradient(to left, var(--tw-gradient-stops));
+}
+.svg-opacity-50 svg {
+  @apply opacity-50;
 }
