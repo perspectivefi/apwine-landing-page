@@ -6,6 +6,12 @@ body {
     @apply bg-opacity-75;
 }
 
+@media (min-width: 1536px) {
+    html {
+        zoom: 140%;
+    }
+}
+
 .gatsby-resp-image-image, .gatsby-resp-image-background-image {
     @apply rounded-lg;
 }
