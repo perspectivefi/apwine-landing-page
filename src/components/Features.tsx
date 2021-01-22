@@ -14,7 +14,7 @@ const Feature = ({ icon, title, description }) => (
 )
 
 const Features = () => (
-    <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8">
+    <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8 mx-auto 2xl:max-w-4xl">
         <Feature
             icon={hedgeIcon}
             title="Hedge your risk"

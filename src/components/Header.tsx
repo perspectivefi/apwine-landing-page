@@ -10,11 +10,11 @@ const Header = () => (
             <a href="https://alpha.apwine.fi" target="_blank" rel="noopener referrer" className="text-white px-4 py-2 border-2 border-primary-200 rounded-xl md:hidden">Enter Alpha</a>
         </div>
         <div className="flex flex-row items-center sm:space-x-12 text-sm justify-around sm:mx-auto md:mx-0">
-            <Link to="/" className="text-white">About</Link>
-            <a href="https://gov.apwine.fi" target="_blank" rel="noopener referrer" className="text-white">Forum</a>
+            <Link to="/" className="text-white hover:text-primary-200 transition duration-300">About</Link>
+            <a href="https://gov.apwine.fi" target="_blank" rel="noopener referrer" className="text-white hover:text-primary-200 transition duration-300">Forum</a>
             { /* <Link href="/blog" className="text-white">Blog</a> */ }
-            <Link to="/faq" className="text-white">FAQ</Link>
-            <a href="https://docs.apwine.fi" target="_blank" rel="noopener referrer" className="text-white">Documentation</a>
+            <Link to="/faq" className="text-white hover:text-primary-200 transition duration-300">FAQ</Link>
+            <a href="https://docs.apwine.fi" target="_blank" rel="noopener referrer" className="text-white hover:text-primary-200 transition duration-300">Documentation</a>
             <a href="https://alpha.apwine.fi" target="_blank" rel="noopener referrer" className="text-white px-4 py-2 border-2 border-primary-200 rounded-xl hidden md:block">Enter Alpha</a>
         </div>
     </div>

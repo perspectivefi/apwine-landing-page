@@ -15,6 +15,11 @@
 
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
 }
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline-element {
+      margin: 2em 0;
+  }
+}
 .svg-opacity-50 svg {
   @apply opacity-50;
 }

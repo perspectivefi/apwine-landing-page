@@ -18,7 +18,7 @@ const Milestone = ({ date, name, icon, done = false }) => (
       background: "rgb(23, 20, 42)",
       "md:box-shadow": done ? "0px 0px 48px rgba(91, 65, 245, 0.5)" : "none",
       "box-shadow": done ? "0px 0px 26px rgba(91, 65, 245, 0.5)" : "none",
-      "border-radius": "0.75rem"
+      borderRadius: "0.75rem"
     }}
     textClassName={ done ? "border border-primary-300 border-opacity-50" : "" }
     contentArrowStyle={done ? {
