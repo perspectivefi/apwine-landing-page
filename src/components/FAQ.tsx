@@ -53,29 +53,28 @@ const questions = [
 const FAQ: FunctionComponent<{ limit?: number }> = ({ limit }) => {
     const [open, setOpen] = useState(null)
     return (
-        <div>
-            <Title>FAQ</Title>
-            <div className="mt-8">
+        <div className="mx-auto w-full max-w-2xl">
+            <div className="flex flex-col items-center mx-auto space-y-4">
+                <div className="w-5 h-1 bg-gradient-to-r from-primary-300 to-primary-200" />
+                <span className="font-bold text-4xl text-white text-glow">Frequently Asked Questions</span>
+            </div>
+            <div className="mt-8 space-y-6">
                 { (limit ? questions.slice(0, limit) : questions).map((([question, answer], i) => {
                     const currentOpen = open === question
                     return (
-                        <div>
+                        <div className="rounded-xl p-6 px-8 bg-primary-400 bg-opacity-50 text-white">
                             <button
                             className={classnames(
                                 "flex flex-row items-center justify-between",
-                                "w-full",
-                                "py-4",
-                                currentOpen && "text-blue-500",
-                                "text-gray-800 hover:text-blue-600"
+                                "w-full space-x-2",
+                                "text-white hover:text-primary-100"
                             )}
                             onClick={() => setOpen(currentOpen ? null : question)}>
-                                <h3 className="text-xl font-bold text-left">{ question }</h3>
+                                <h3 className="text-base font-bold text-left">{ question }</h3>
                                 { currentOpen ? <FiMinus /> : <FiPlus /> }
                             </button>
-                            <Divider />
                             { currentOpen ? <>
-                                <Paragraph className="my-8">{ answer }</Paragraph>
-                                { (i < questions.length - 1) ? <Divider /> : null }
+                                <div className="text-sm mt-8 opacity-75">{ answer }</div>
                             </> : null }
                         </div>
                     )

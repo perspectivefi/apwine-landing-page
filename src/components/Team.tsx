@@ -4,54 +4,50 @@ import styled from "styled-components"
 
 import classnames from "classnames"
 
-import { Title, Paragraph } from "./Text"
-
 import gaspard from "../images/team/gaspard.jpg"
 import antoine from "../images/team/antoine.jpg"
 import ulysse from "../images/team/ulysse.jpg"
+import jean from "../images/team/jean.jpg"
+
+import julien from "../images/team/julien.png"
 
 import jiahua from "../images/team/jiahua.jpg"
+import marc from "../images/team/marc.jpg"
 
-import { FiTwitter, FiGlobe } from "react-icons/fi"
+import { FaTwitter } from "react-icons/fa"
 
-const GradientBackground = styled.div`
-    background: linear-gradient(to bottom left, #90cdf4, #4299e1);
-`
-
-const IconLink = ({ href, icon: Icon }) => (
-    <a href={href} target="_blank" className="ml-2 hover:text-blue-500"><Icon /></a>
-)
-
-const Person = ({ image, name, description }) => (
-    <div className="flex flex-col md:flex-row mt-16 md:items-center">
-        <div className="w-24 h-full">
-            <GradientBackground className="p-1 rounded-full w-24 h-auto">
-                <img src={image} className="rounded-full w-full" />
-            </GradientBackground>
-        </div>
-        <div className="flex flex-col mt-2 md:mt-0 md:ml-4">
-            <h3 className="flex flex-row items-center text-gray-800 text-2xl font-bold text-left">{ name }</h3>
-            <Paragraph className="mt-2">{ description }</Paragraph>
+const Person = ({ img, name, twitter, description }) => (
+    <div className="relative w-28 lg:w-auto lg:flex-1 flex flex-col rounded-xl">
+        <img src={img} className="w-28 lg:w-28 rounded-t-xl" />
+        <div className="w-28 lg:w-28 flex flex-col p-2 bg-primary-300 bg-opacity-20 rounded-b-xl">
+            <div className="flex flex-row items-center justify-between">
+                <span className="text-white text-xs text-primary-100">{ name }</span>
+                <a href={`https://twitter.com/${twitter}`} target="_blank" rel="noopener referrer" className="hover:text-primary-100 transition duration-300 text-primary-200 text-sm"><FaTwitter /></a>
+            </div>
+            <span className="absolute bottom-0 left-0 right-0 text-center text-xs text-primary-200 -mb-5 opacity-75">{ description }</span>
         </div>
     </div>
 )
 
 const Team = () => (
-    <div>
-        <Title>Team</Title>
-        <Person image={gaspard} name={
-            <>Gaspard Peduzzi<IconLink href="https://twitter.com/GaspardPeduzzi" icon={FiTwitter} /></>
-        } description="CS Student at EPFL, Gaspard co-founded the Blockchain Student Association. He is passionate about trustless/censorship resistant systems and actively conducting research in those fields." />
-        <Person image={antoine} name={
-            <>Antoine Mouran<IconLink href="https://twitter.com/AntoineMouran" icon={FiTwitter} /></>
-        } description="The uprise of Decentralised Finance (DeFi) marked a turning point for Antoine. This passion led him to become an active member and moderator of the DeFi France community and a member of the Blockchain Student Association at EPFL, where he's currently studying CS." />
-        <Person image={ulysse} name={
-            <>Ulysse Ramage<IconLink href="https://uly.dev" icon={FiGlobe} /></>
-        } description="Originally from Paris, Ulysse graduated in CS at EPFL and is now working as a software engineer at Amazon. He's interested in building user-friendly applications and interfaces." />
-        <Title className="mt-16">Advisors</Title>
-        <Person image={jiahua} name={
-            <>Jiahua Xu<IconLink href="https://jiahua-xu.com" icon={FiGlobe} /></>
-        } description="Dr. Jiahua Xu is a research associate at UCL Centre for Blockchain Technologies, as well as a teaching and research affiliate at EPFL. Her research interests lie primarily in blockchain economics, behavioural finance and risk management." />
+    <div className="mx-auto flex flex-col items-start justify-center sm:w-full sm:max-w-2xl lg:max-w-none lg:w-auto sm:grid sm:grid-cols-2 lg:flex lg:flex-row space-y-16 sm:space-y-0 lg:space-x-16">
+        <div className="mx-auto lg:mx-0 flex flex-col space-y-2 w-64 lg:w-auto">
+            <span className="text-white text-xl font-bold">Advisors</span>
+            <div className="grid grid-cols-2 gap-10 lg:gap-0 lg:flex lg:flex-row lg:space-x-4">
+                <Person img={julien} name="Julien B." twitter="bneiluj" description="Stake Capital, Curve" />
+                <Person img={marc} name="Marc Z." twitter="lemiscate" description="Aave" />
+                <Person img={jiahua} name="Jiahua X." twitter="jiahuajavaxu" description="EPFL, UCL" />
+            </div>
+        </div>
+        <div className="mx-auto lg:mx-0 flex flex-col space-y-2 w-64 lg:w-auto">
+            <span className="text-white text-xl font-bold">Team</span>
+            <div className="grid grid-cols-2 gap-10 lg:gap-0 lg:flex lg:flex-row lg:space-x-4">
+                <Person img={jean} name="Jean C." twitter="jean_chambras" description="Comm, Branding" />
+                <Person img={gaspard} name="Gaspard P." twitter="gaspardpeduzzi" description="Protocol" />
+                <Person img={ulysse} name="Ulysse R." twitter="ulydev" description="UI / UX" />
+                <Person img={antoine} name="Antoine M." twitter="L0GYKAL" description="DeFi Evangelist" />
+            </div>
+        </div>
     </div>
 )
 

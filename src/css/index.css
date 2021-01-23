@@ -1,7 +1,16 @@
-@tailwind base;
+html {
+    @apply bg-black;
+}
+body {
+    @apply bg-primary-500;
+    @apply bg-opacity-75;
+}
 
-@tailwind components;
-@tailwind utilities;
+@media (min-width: 1536px) {
+    html {
+        zoom: 140%;
+    }
+}
 
 .gatsby-resp-image-image, .gatsby-resp-image-background-image {
     @apply rounded-lg;
@@ -9,4 +18,13 @@
 
 .gatsby-resp-image-wrapper {
     @apply my-8;
+}
+
+.pattern-dots {
+    background-image: radial-gradient(currentColor 1px, transparent 1px);
+    background-size: calc(20 * 1px) calc(20 * 1px);
+}
+
+.text-glow {
+    text-shadow: 0px 0px 48px #372EC0;
 }

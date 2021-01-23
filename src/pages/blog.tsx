@@ -1,58 +1,85 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import classnames from "classnames"
-
-import PageHeader from "../components/PageHeader"
 import Container from "../components/Container"
-import Divider from "../components/Divider"
+import Header from "../components/Header"
+import NewsletterSubscribe from "../components/NewsletterSubscribe"
+import BlogHero from "../components/BlogHero"
+import ArticleThumbnail from "../components/ArticleThumbnail"
 
 import Layout from "../components/Layout"
 
-import { Title } from "../components/Text"
-
-const BlogPage = ({ data: { allMarkdownRemark: { edges } } }) => {
-    const Posts = edges
-        .map(({ node: { id, frontmatter: { title, slug, date } } }, i: number) => <>
-            { (i > 0 ? <Divider /> : null) }
-            <div className={classnames(
-                "flex flex-col",
-                (i > 0) && "mt-8",
-                (i < (edges.length-1)) && "mb-8"
-            )} key={i}>
-                <a href={slug}><Title>{ title }</Title></a>
-                <h2 className="text-gray-500 text-sm">{ date }</h2>
-            </div>
-        </>)
-
-    return (
-        <Layout pageName="Blog">
-            <PageHeader title="APWine" />
-            <Container className="-mt-2">
-                <div className="flex flex-col">
-                    { Posts }
-                </div>
-            </Container>
-        </Layout>
+const BlogPage = ({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) => {
+  const lastArticle = edges[0]["node"]
+  const Hero = (
+    <BlogHero
+      title={lastArticle.frontmatter.title}
+      excerpt={lastArticle.excerpt}
+      slug={lastArticle.frontmatter.slug}
+    />
+  )
+  const Posts = edges.map(
+    (
+      {
+        node: {
+          id,
+          excerpt,
+          frontmatter: { title, slug, date },
+        },
+      },
+      i: number
+    ) => (
+      <ArticleThumbnail
+        key={id}
+        title={title}
+        date={date}
+        slug={slug}
+        excerpt={excerpt}
+      />
     )
+  )
+
+  return (
+    <Layout
+      pageName="Blog"
+      className="relative pattern-dots text-opacity-20 text-primary-200"
+    >
+      <div className="absolute bg-gradient-to-b from-primary-200 to-black h-screen w-full opacity-20" />{" "}
+      <div className="relative z-10">
+        <Header />
+        <Container children={Hero} className="mt-40" />
+        <Container
+          children={
+            <div className="grid grid-rows-2 gap-8 grid-cols-3">{Posts}</div>
+          }
+          className="mt-40"
+        />
+        <Container children={<NewsletterSubscribe />} className="mt-32" />
+      </div>
+    </Layout>
+  )
 }
 
 export default BlogPage
 
 export const pageQuery = graphql`
-    query {
-        allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-            edges {
-                node {
-                    id
-                    excerpt(pruneLength: 250)
-                    frontmatter {
-                        date(formatString: "MMMM DD, YYYY")
-                        slug
-                        title
-                    }
-                }
-            }
+  query {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            slug
+            title
+          }
         }
+      }
     }
+  }
 `
