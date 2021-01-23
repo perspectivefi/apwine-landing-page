@@ -43,8 +43,8 @@ const Team = () => (
             <span className="text-white text-xl font-bold">Team</span>
             <div className="grid grid-cols-2 gap-10 lg:gap-0 lg:flex lg:flex-row lg:space-x-4">
                 <Person img={jean} name="Jean C." twitter="jean_chambras" description="Comm, Branding" />
-                <Person img={gaspard} name="Gaspard P." twitter="gaspardpeduzzi" description="Protocol Lead" />
-                <Person img={ulysse} name="Ulysse R." twitter="ulydev" description="Frontend Lead" />
+                <Person img={gaspard} name="Gaspard P." twitter="gaspardpeduzzi" description="Protocol" />
+                <Person img={ulysse} name="Ulysse R." twitter="ulydev" description="UI / UX" />
                 <Person img={antoine} name="Antoine M." twitter="L0GYKAL" description="DeFi Evangelist" />
             </div>
         </div>
