@@ -19,12 +19,12 @@ const Hero = () => (
     </span>
     <div className="flex flex-col items-center mt-8 space-y-2 text-sm sm:flex-row sm:space-y-0 sm:space-x-2">
       <a
-        href="https://lbp.apwine.fi"
+        href="https://app.apwine.fi"
         target="_blank"
         rel="noopener noreferrer"
         className="px-8 py-3 transition duration-300 bg-gradient-to-br from-primary-300 to-primary-200 rounded-xl hover:opacity-75"
       >
-        Enter LBP
+        V1 Page
       </a>
       <a
         href="https://gov.apwine.fi"
