@@ -17,8 +17,8 @@ const questions = [
         "The APWine protocol locks funds to generate interests which are tokenized as futures, enabling a DeFi user to trade unrealised yield."
     ],
     [
-        "Will there be a token?",
-        "The APWine protocol will issue an APW token. Its mechanisms and distribution will be announced soon in an upcoming blog post."
+        "What is the APW token?",
+        "The APW token is an ERC-20 token, with a primary focus on protocol governance through the APWine DAO."
     ],
     [
         "Why is the bearing interest token locked for the period corresponding to the future?",
@@ -30,15 +30,15 @@ const questions = [
     ],
     [
         "Where can we get those future interest tokens?",
-        "You can mint them by locking your funds on our platform for a period of a future. Or you can buy them on our exchange and everywhere they are traded."
+        "You can mint them by locking your funds on our platform for a period of a future. Or you can buy them on our AMM and everywhere they are traded."
     ],
     [
-        "What are the incentives for the APW token holders?",
-        "At each future expiration, 1% of the generated yield is shared between all APW token holders (percentage subject to change in the future based on the market demand). The token will also enable them to participate in the governance mechanisms of APWine."
+        "Why would I stake my APW?",
+        "The token follows a Curve-like form of voting escrow (veAPW) which has a Lock capability. Locking your APW for up to 2 years will yield an increased voting weight and share of protocol rewards. The longer you lock your APW, the more voting power you have. The APW token has not only utility, but a stake in the performance of the protocol."
     ],
     [
         "What are some of the use cases?",
-        "You want to get involved in yield farming but the fluctuation of APYs scares you. So you want to sell your interests at a fixed price to minimise impact from fluctuations. For example, after having deposited your DAI on Compound you can lock your cDAI in APWine for a week and trade in advance the yield that they will generate this week."
+        "You want to get involved in yield farming but the fluctuation of APYs scares you or getting your yield upfront is appealing to you. So you want to sell your interests at a fixed price to minimise impact from fluctuations and get your yield upfront. For example, after having deposited your DAI on Aave you can lock your aDAI in APWine for a week and trade in advance the yield that they will generate this week."
     ],
     [
         "What are the motivations behind the project? What problem does it solve?",
@@ -46,7 +46,7 @@ const questions = [
     ],
     [
         "Who is it for? Everybody? DeFi experts? The novices?",
-        "APWine includes an exchange where everyone will be able to trade future interests easily on it. We expect to get traction also from yield farmers, arbitrageurs, and traders."
+        "APWine includes an exchange (AMM) where everyone will be able to trade future interests easily on it. We expect to get traction also from yield farmers, arbitrageurs, and traders."
     ]
 ]
 
