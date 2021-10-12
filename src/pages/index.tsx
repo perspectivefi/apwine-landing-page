@@ -1,24 +1,13 @@
 import React from "react"
-
-import Layout from "../components/Layout"
-
 import Container from "../components/Container"
-import Divider from "../components/Divider"
-
-import Hero from "../components/Hero"
-import Features from "../components/Features"
-import HowItWorks from "../components/HowItWorks"
-import FAQ from "../components/FAQ"
-import Team from "../components/Team"
-import Roadmap from "../components/Roadmap"
-import Footer from "../components/Footer"
-import NewsletterSubscribe from "../components/NewsletterSubscribe"
-import Header from "../components/Header"
 import Diagram from "../components/Diagram"
-
+import Features from "../components/Features"
+import Hero from "../components/Hero"
+import Layout from "../components/Layout"
+import Team from "../components/Team"
+import claimDiagram from "../images/diagrams/claim.svg"
 import lockDiagram from "../images/diagrams/lock.svg"
 import sellDiagram from "../images/diagrams/sell.svg"
-import claimDiagram from "../images/diagrams/claim.svg"
 
 const IndexPage = () => (
   <Layout>
@@ -46,8 +35,6 @@ const IndexPage = () => (
     <Container children={<Features />} className="mt-40" />
 
     <Container children={<Team />} className="mt-40" />
-
-    <Container children={<Roadmap />} className="mt-40" />
   </Layout>
 )
 
