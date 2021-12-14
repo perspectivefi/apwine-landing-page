@@ -24,7 +24,7 @@ const Hero = () => (
         rel="noopener noreferrer"
         className="px-8 py-3 transition duration-300 bg-gradient-to-br from-primary-300 to-primary-200 rounded-xl hover:opacity-75"
       >
-        V1 Page
+        Launch App
       </a>
       <a
         href="https://gov.apwine.fi"
