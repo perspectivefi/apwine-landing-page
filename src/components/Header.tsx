@@ -19,7 +19,7 @@ const Header = () => (
         rel="noopener referrer"
         className="px-4 py-2 text-sm text-white transition duration-300 border-2 border-primary-200 rounded-xl md:hidden hover:text-white hover:bg-primary-200"
       >
-        V1 Page
+        Launch App
       </a>
     </div>
     <div className="flex flex-row items-center justify-around text-sm sm:space-x-12 sm:mx-auto md:mx-0">
@@ -66,7 +66,7 @@ const Header = () => (
         rel="noopener referrer"
         className="hidden px-4 py-2 text-white transition duration-300 border-2 border-primary-200 rounded-xl md:block hover:text-white hover:bg-primary-200"
       >
-        V1 Page
+        Launch App
       </a>
     </div>
   </div>
