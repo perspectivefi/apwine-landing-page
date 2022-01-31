@@ -1,0 +1,212 @@
+header.primary-header {
+  position: fixed;
+  top: 0;
+  padding: 38px 0 0 0;
+  width: 100%;
+  z-index: 99;
+  @include transition(padding, background-color);
+
+  @include mobile {
+    padding: 24px 0 0 0;
+  }
+
+  &.is-scrolled {
+    background-color: rgba(#e4e6fd, 0.65);
+    padding: 7px 0;
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+
+  .container {
+    max-width: 1272px;
+
+    .row {
+      display: flex;
+      align-items: center;
+
+      nav {
+        margin-left: 80px;
+
+        @include tablet {
+          display: none;
+        }
+
+        a {
+          font-family: "Inter", sans-serif;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 17px;
+          color: #302b7b;
+
+          &:not(:last-child) {
+            margin-right: 30px;
+          }
+        }
+      }
+
+      .btn-wrap {
+        margin-left: auto;
+
+        @include tablet {
+          display: none;
+        }
+
+        a {
+          padding: 14px 21px 15px;
+        }
+      }
+
+      .menu-trigger {
+        display: none;
+
+        @include tablet {
+          cursor: pointer;
+          display: block;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+}
+
+header.mobile-menu {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  pointer-events: none;
+  padding-bottom: 32px;
+  background-color: #e4e6fd;
+  @include transition(transform);
+
+  // todo: pridėt background image
+
+  @include tablet {
+    display: flex;
+  }
+
+  &.active {
+    transform: translateX(0);
+    pointer-events: auto;
+    @include transition(transform);
+  }
+
+  &.hidden {
+    display: none;
+  }
+
+  .container {
+    padding: 0 40px;
+
+    @include mobile {
+      padding: 0 24px;
+    }
+
+    .layout {
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+
+    .top-row {
+      padding-top: 49px;
+      display: flex;
+      margin-bottom: 100px;
+
+      @include mobile {
+        padding-top: 24px;
+        margin-bottom: 75px;
+        flex-shrink: 0;
+      }
+
+      .menu-close {
+        margin-left: auto;
+      }
+    }
+
+    nav {
+      max-width: 395px;
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      @include mobile {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 15px;
+        flex-shrink: 0;
+      }
+
+      a {
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #302b7b;
+
+        @include mobile {
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+    }
+
+    .bottom-row {
+      margin-top: 100px;
+      display: flex;
+      align-items: flex-end;
+
+      @include mobile {
+        flex-grow: 1;
+        margin-top: 62px;
+        flex-direction: column;
+      }
+
+      .btn-wrap {
+        @include mobile {
+          width: 100%;
+          margin-bottom: 30px;
+        }
+
+        a {
+          padding: 16px 40px;
+
+          @include mobile {
+            display: block;
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+
+      .socials-wrap {
+        margin-left: auto;
+
+        @include mobile {
+          margin-left: 0;
+          margin-top: auto;
+          width: 100%;
+        }
+
+        .heading {
+          margin-bottom: 10px;
+          font-family: "Inter", sans-serif;
+          font-size: 14px;
+          line-height: 18px;
+          letter-spacing: 0.2px;
+          color: #373280;
+        }
+
+        .socials-link-wg {
+          @include mobile {
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+}

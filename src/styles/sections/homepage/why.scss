@@ -1,0 +1,171 @@
+section.why-section {
+  margin-top: 165px;
+  margin-bottom: -143px;
+  position: relative;
+  z-index: 3;
+
+  @include tablet {
+    margin-top: 197px;
+  }
+
+  @include mobile {
+    margin-top: 101px;
+    margin-bottom: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 3;
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 0 -27px;
+
+      @include tablet {
+        margin: 0 -7px;
+      }
+
+      @include mobile {
+        margin: -19px 0;
+      }
+
+      .col {
+        padding: 0 27px;
+
+        @include tablet {
+          padding: 0 7px;
+        }
+
+        @include mobile {
+          padding: 19px 0;
+        }
+
+        &:nth-child(1) {
+          flex: 0 0 41.682242990654206%;
+          max-width: 41.682242990654206%;
+
+          @include tablet {
+            flex: 0 0 36.48989898989899%;
+            max-width: 36.48989898989899%;
+          }
+
+          @include mobile {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+        }
+
+        &:nth-child(2) {
+          flex: 0 0 58.317757009345794%;
+          max-width: 58.317757009345794%;
+
+          @include tablet {
+            flex: 0 0 63.51010101010101%;
+            max-width: 63.51010101010101%;
+          }
+
+          @include mobile {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+        }
+
+        .mini-heading {
+          position: relative;
+          font-family: "Inter", sans-serif;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 15px;
+          text-transform: uppercase;
+          color: #fff;
+          padding-left: 14px;
+          margin-bottom: 10px;
+
+          &:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 3px;
+            width: 7px;
+            height: 7px;
+            background-image: url("../../../images/logo-block-before.png");
+            background-size: 100%;
+          }
+        }
+
+        h2 {
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 56px;
+          letter-spacing: -2px;
+          color: #ffffff;
+          margin-bottom: 24px;
+
+          @include tablet {
+            font-size: 42px;
+            line-height: 50px;
+          }
+
+          @include mobile {
+            font-size: 32px;
+            line-height: 38px;
+            margin-bottom: 20px;
+          }
+        }
+
+        p {
+          font-family: "Inter", sans-serif;
+          font-size: 16px;
+          line-height: 24px;
+          color: #e4e6fd;
+          max-width: 336px;
+
+          @include tablet {
+            max-width: 100%;
+          }
+
+          @include mobile {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+
+        .btn-wrap {
+          margin-top: 30px;
+
+          @include mobile {
+            margin-top: 24px;
+          }
+        }
+
+        & > picture {
+          position: relative;
+          height: 100%;
+          width: 100%;
+          display: block;
+
+          .bg-wrap {
+            user-select: none;
+            pointer-events: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            z-index: -1;
+            transform: scale(2);
+
+            img {
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}

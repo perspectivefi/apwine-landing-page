@@ -1,0 +1,129 @@
+section.top-cta-section {
+  padding: 117px 0 104px;
+  position: relative;
+  margin-top: -62px;
+
+  @include tablet {
+    padding: 78px 0 67px;
+    margin-top: -35px;
+  }
+
+  @include mobile {
+    padding: 55px 0 67px;
+  }
+
+  .bg-wrap {
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .desktop {
+      height: 100%;
+
+      @include tablet {
+        display: none;
+      }
+    }
+
+    .tablet {
+      display: none;
+      height: 100%;
+
+      @include tablet {
+        display: block;
+      }
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .mobile {
+      display: none;
+      height: 100%;
+
+      @include mobile {
+        display: block;
+      }
+    }
+
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 3;
+
+    .block {
+      max-width: 493px;
+      margin: 0 auto;
+
+      .logo-wrap {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 11px;
+      }
+
+      h2 {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        letter-spacing: -2px;
+        color: #ffffff;
+        margin-bottom: 16px;
+
+        @include tablet {
+          font-size: 42px;
+          line-height: 56px;
+        }
+
+        @include mobile {
+          font-size: 32px;
+          line-height: 38px;
+          margin-bottom: 12px;
+        }
+      }
+
+      .subheading {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #e4e6fd;
+
+        @include mobile {
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+
+      .btn-wrap {
+        margin-top: 24px;
+        display: flex;
+        justify-content: center;
+
+        a {
+          padding: 14px 25px;
+        }
+      }
+    }
+  }
+}
