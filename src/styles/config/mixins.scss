@@ -1,0 +1,80 @@
+$browser-context: 16;
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+@mixin tablet {
+  @media screen and (max-width: em(1024)) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: em(767)) {
+    @content;
+  }
+}
+
+@mixin media-custom-max($size) {
+  @media screen and (max-width: em($size)) {
+    @content;
+  }
+}
+
+@mixin transition($transitions...) {
+  $unfoldedTransitions: ();
+
+  @each $transition in $transitions {
+    $unfoldedTransitions: append(
+      $unfoldedTransitions,
+      unfoldTransition($transition),
+      comma
+    );
+  }
+
+  -webkit-transition: $unfoldedTransitions;
+  -moz-transition: $unfoldedTransitions;
+  -ms-transition: $unfoldedTransitions;
+  -o-transition: $unfoldedTransitions;
+  transition: $unfoldedTransitions;
+}
+
+@function unfoldTransition($transition) {
+  $property: all;
+  $duration: 0.3s;
+  $easing: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  $delay: null;
+  $defaultProperties: ($property, $duration, $easing, $delay);
+
+  $unfoldedTransition: ();
+
+  @for $i from 1 through length($defaultProperties) {
+    $p: null;
+
+    @if $i <= length($transition) {
+      $p: nth($transition, $i);
+    } @else {
+      $p: nth($defaultProperties, $i);
+    }
+
+    $unfoldedTransition: append($unfoldedTransition, $p);
+  }
+
+  @return $unfoldedTransition;
+}
+
+@mixin placeholder($color) {
+  &::placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+
+  &::-ms-input-placeholder {
+    color: $color;
+  }
+}

@@ -1,0 +1,180 @@
+.our-team-section {
+  padding-bottom: 180px;
+  position: relative;
+
+  @include tablet {
+    padding-bottom: 150px;
+  }
+
+  @include mobile {
+    padding-bottom: 76px;
+  }
+
+  .bg-wrap {
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    top: -242px;
+    height: 888px;
+    width: 1020px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    @include tablet {
+      top: -196px;
+      width: 100%;
+      height: 1022px;
+    }
+
+    @include mobile {
+      height: 1008px;
+    }
+
+    img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .shadow {
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 661px;
+    height: 720px;
+    background-image: url("../../../images/our-team-shadow.png");
+    background-size: cover;
+
+    @include tablet {
+      width: 500px;
+      height: 600px;
+      bottom: 0;
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 3;
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -13px -12px;
+
+      @include mobile {
+        margin: -8px;
+      }
+
+      .col {
+        padding: 13px 12px;
+        flex: 0 0 20%;
+        max-width: 20%;
+
+        @include mobile {
+          padding: 8px;
+        }
+
+        @include tablet {
+          flex: 0 0 25%;
+          max-width: 25%;
+        }
+
+        @include mobile {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+
+        &.col-heading {
+          flex: 0 0 40%;
+          max-width: 40%;
+          margin-bottom: 16px;
+
+          @include tablet {
+            flex: 0 0 50%;
+            max-width: 50%;
+          }
+
+          @include mobile {
+            flex: 0 0 100%;
+            max-width: 100%;
+            display: flex;
+            align-items: flex-end;
+          }
+
+          h2 {
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -2px;
+            color: #ffffff;
+            margin-bottom: 24px;
+
+            @include tablet {
+              font-size: 42px;
+              line-height: 50px;
+            }
+
+            @include mobile {
+              font-size: 32px;
+              line-height: 38px;
+              margin-bottom: 20px;
+            }
+          }
+
+          p {
+            font-family: "Inter", sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            color: #ffffff;
+            max-width: 271px;
+
+            @include mobile {
+              font-size: 14px;
+              line-height: 20px;
+              max-width: 145px;
+            }
+          }
+
+          .btn-wrap {
+            margin-top: 40px;
+
+            @include mobile {
+              margin-top: 0;
+              margin-left: auto;
+            }
+
+            a {
+              padding: 0 25px;
+              border: 2px solid #5b44b0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 114px;
+              height: 114px;
+              border-radius: 100%;
+              font-family: "Inter", sans-serif;
+              font-size: 14px;
+              line-height: 17px;
+              text-align: center;
+              color: #ffffff;
+
+              @include mobile {
+                padding: 0 12px;
+                width: 74px;
+                height: 74px;
+                font-size: 10px;
+                line-height: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

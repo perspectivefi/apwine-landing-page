@@ -1,0 +1,14 @@
+.socials-link-wg {
+  display: flex;
+  gap: 14px;
+
+  a.social-link {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background: #f4f5ff;
+  }
+}

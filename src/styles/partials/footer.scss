@@ -1,0 +1,166 @@
+footer.primary-footer {
+  background: #362677;
+  padding: 40px 0 62px;
+  position: relative;
+
+  @include tablet {
+    padding: 35px 0 38px;
+  }
+
+  @include mobile {
+    padding: 13px 0 28px;
+  }
+
+  .curve-wrap {
+    position: absolute;
+    top: -44px;
+    width: 100%;
+
+    @include tablet {
+      top: -23px;
+    }
+
+    @include mobile {
+      top: -10px;
+    }
+
+    .desktop {
+      height: 45px;
+
+      @include tablet {
+        display: none;
+      }
+    }
+
+    .tablet {
+      display: none;
+      height: 24px;
+
+      @include tablet {
+        display: block;
+      }
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .mobile {
+      display: none;
+      height: 11px;
+
+      @include mobile {
+        display: block;
+      }
+    }
+
+    svg {
+      position: absolute;
+      object-fit: contain;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .container {
+    max-width: 1272px;
+
+    .row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      align-items: center;
+
+      @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      @include mobile {
+        flex-direction: column;
+      }
+
+      a.logo {
+        @include mobile {
+          flex: 0 0 100%;
+          max-width: 100%;
+          margin-bottom: 13px;
+        }
+
+        svg {
+          max-width: 144px;
+          width: 100%;
+          height: auto;
+
+          @include tablet {
+            max-width: 97px;
+          }
+        }
+      }
+
+      nav {
+        @include tablet {
+          margin-left: auto;
+        }
+
+        @include mobile {
+          flex: 0 0 100%;
+          max-width: 100%;
+          margin-left: 0;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 13px;
+        }
+
+        a {
+          font-family: "Inter", sans-serif;
+          font-size: 14px;
+          line-height: 17px;
+          color: #e4e6fd;
+
+          @include tablet {
+            font-size: 12px;
+            line-height: 15px;
+          }
+
+          @include mobile {
+            font-size: 10px;
+            line-height: 12px;
+          }
+
+          &:not(:last-child) {
+            margin-right: 30px;
+
+            @include tablet {
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+
+      .copyrights {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: right;
+        letter-spacing: 0.2px;
+        color: #e4e6fd;
+
+        @include tablet {
+          font-size: 12px;
+          line-height: 16px;
+          margin-top: 8px;
+          flex: 0 0 100%;
+          max-width: 100%;
+          text-align: left;
+        }
+
+        @include mobile {
+          flex: 0 0 100%;
+          max-width: 100%;
+          font-size: 10px;
+          line-height: 13px;
+        }
+      }
+    }
+  }
+}

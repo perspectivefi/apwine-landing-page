@@ -1,0 +1,140 @@
+section.advisors-section {
+  padding-bottom: 266px;
+  position: relative;
+
+  @include tablet {
+    padding-bottom: 196px;
+  }
+
+  @include mobile {
+    padding-bottom: 95px;
+  }
+
+  .bg-wrap {
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    top: -242px;
+    width: 985px;
+    height: 940px;
+    right: 0;
+    bottom: 0;
+
+    @include tablet {
+      top: -297px;
+      width: 100%;
+      height: 975px;
+    }
+
+    @include mobile {
+      height: 708px;
+      top: 0px;
+    }
+
+    img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 3;
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: -13px -12px;
+
+      @include mobile {
+        margin: -8px;
+      }
+
+      .col {
+        padding: 13px 12px;
+        flex: 0 0 20%;
+        max-width: 20%;
+
+        @include tablet {
+          order: 2;
+          flex: 0 0 25%;
+          max-width: 25%;
+        }
+
+        @include mobile {
+          flex: 0 0 50%;
+          max-width: 50%;
+          padding: 8px;
+        }
+
+        &.col-heading {
+          flex: 0 0 40%;
+          max-width: 40%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          @include tablet {
+            margin-bottom: 37px;
+            order: 1;
+            flex: 0 0 100%;
+            max-width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            flex-direction: row;
+          }
+
+          @include mobile {
+            margin-bottom: 8px;
+          }
+
+          h2 {
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -2px;
+            color: #ffffff;
+            margin-bottom: 24px;
+            max-width: 288px;
+
+            @include tablet {
+              font-size: 42px;
+              line-height: 50px;
+              margin-bottom: 0;
+            }
+
+            @include mobile {
+              font-size: 32px;
+              line-height: 38px;
+              margin-bottom: 20px;
+            }
+          }
+
+          p {
+            font-family: "Inter", sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            color: #ffffff;
+            max-width: 288px;
+
+            @include tablet {
+              margin-left: auto;
+            }
+
+            @include mobile {
+              margin-left: 0;
+              max-width: 100%;
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

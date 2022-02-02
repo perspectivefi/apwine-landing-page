@@ -1,0 +1,309 @@
+.cta-subscribe-section {
+  background: #e4e6fd;
+  position: relative;
+  overflow: hidden;
+
+  .bg-wrap {
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    height: 850px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    @include tablet {
+      height: 643px;
+    }
+
+    @include mobile {
+      height: 510px;
+    }
+
+    img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  section.cta-section {
+    padding: 181px 0 215px;
+
+    @include tablet {
+      padding: 148px 0 219px;
+    }
+
+    @include mobile {
+      padding: 112px 0 143px;
+    }
+
+    .quote-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .quote {
+        max-width: 380px;
+        position: relative;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 48px;
+        text-align: center;
+        letter-spacing: -2px;
+        color: #302b7b;
+
+        @include mobile {
+          position: static;
+          font-size: 26px;
+          line-height: 36px;
+          max-width: 270px;
+        }
+
+        &:after,
+        &:before {
+          content: "";
+          position: absolute;
+          top: 10px;
+          background-repeat: no-repeat;
+          width: 23px;
+          height: 10px;
+          background-size: 100%;
+        }
+
+        &:after {
+          right: -30px;
+          background-image: url("../../../images/quote-after.png");
+
+          @include mobile {
+            right: 0px;
+          }
+        }
+
+        &:before {
+          left: -30px;
+          background-image: url("../../../images/quote-before.png");
+
+          @include mobile {
+            left: 0px;
+          }
+        }
+      }
+
+      .btn-wrap {
+        margin-top: 42px;
+
+        @include mobile {
+          margin-top: 30px;
+          width: 100%;
+        }
+
+        a {
+          width: 100%;
+          display: block;
+          text-align: center;
+          padding: 16px 16px;
+        }
+      }
+    }
+  }
+
+  section.subscribe-section {
+    padding-bottom: 193px;
+    overflow: hidden;
+
+    @include tablet {
+      padding-bottom: 108px;
+    }
+
+    @include mobile {
+      padding-bottom: 63px;
+    }
+
+    .section-heading {
+      margin-bottom: 62px;
+      width: 100%;
+      position: relative;
+      display: flex;
+
+      &:after {
+        content: "";
+        width: 192px;
+        height: 222px;
+        position: absolute;
+        top: 54px;
+        right: 23.263888888888889%;
+        background-image: url("../../../images/keep-in-touch-before.png");
+
+        @include tablet {
+          right: 22px;
+        }
+
+        @include mobile {
+          right: 12px;
+          top: 15px;
+          width: 107px;
+          height: 110px;
+          background-size: contain;
+        }
+      }
+
+      & > div {
+        font-family: "Suisse Intl", sans-serif;
+        font-weight: 600;
+        font-size: 200px;
+        line-height: 1;
+        color: #d6d8f7;
+        white-space: nowrap;
+        animation: textLoop 10s linear infinite;
+        padding-right: 0.35em;
+
+        @include tablet {
+          font-size: 150px;
+        }
+
+        @include mobile {
+          font-size: 100px;
+        }
+      }
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+
+      @include tablet {
+        flex-wrap: wrap;
+      }
+
+      .col {
+        &:nth-child(1) {
+          width: 100%;
+
+          @include tablet {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+        }
+
+        &:nth-child(2) {
+          margin-left: auto;
+
+          @include tablet {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+        }
+
+        .form-heading {
+          font-family: "Inter", sans-serif;
+          font-size: 14px;
+          line-height: 24px;
+          color: #373280;
+          max-width: 385px;
+          margin-bottom: 24px;
+
+          @include mobile {
+            max-width: 100%;
+            margin-bottom: 20px;
+          }
+        }
+
+        form {
+          max-width: 496px;
+          width: 100%;
+          display: flex;
+          gap: 15px;
+
+          @include mobile {
+            flex-direction: column;
+          }
+
+          .input-wrap {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            border: 2px solid #d6d8f7;
+            border-radius: 10px;
+            padding: 0 21px;
+
+            svg {
+              flex-shrink: 0;
+              margin-right: 10px;
+            }
+
+            input {
+              width: 100%;
+              flex-grow: 1;
+              border: 0;
+              background-color: transparent;
+              font-family: "Inter", sans-serif;
+              font-size: 14px;
+              line-height: 17px;
+              color: #6764a2;
+              @include placeholder(#6764a2);
+
+              @include mobile {
+                padding: 14px 0;
+              }
+            }
+          }
+
+          button {
+            flex-shrink: 0;
+            padding: 16px 42px;
+
+            @include mobile {
+              padding: 14px 30px;
+            }
+          }
+        }
+
+        .socials-wrap {
+          @include tablet {
+            margin-top: 45px;
+          }
+
+          @include mobile {
+            margin-top: 40px;
+          }
+
+          .heading {
+            margin-bottom: 25px;
+            font-family: "Inter", sans-serif;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+            color: #373280;
+
+            @include mobile {
+              margin-bottom: 10px;
+            }
+          }
+
+          .socials-link-wg {
+            @include mobile {
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes textLoop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
