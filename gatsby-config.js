@@ -4,6 +4,7 @@ module.exports = {
     description: `The yield derivatives marketplace. Tokenise and get your yield upfront. Hedge your risk on APY volatility.`,
     author: `apwine`,
     baseUrl: `https://apwine.fi`,
+    siteUrl: `https://apwine.fi`,
   },
   plugins: [
     // "gatsby-plugin-sass",
