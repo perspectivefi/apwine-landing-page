@@ -1,11 +1,11 @@
-import * as React from "react";
+import * as React from "react"
 
-import "../../styles/sections/homepage/topCta.scss";
+import "../../styles/sections/homepage/topCta.scss"
 
-import TopCtaLogo from "../../images/top-cta-logo.png";
-import SectionBG from "../../images/top-cta-bg.svg";
-import SectionBGTablet from "../../images/top-cta-bg-tablet.svg";
-import SectionBGMobile from "../../images/top-cta-bg-mobile.svg";
+import TopCtaLogo from "../../images/top-cta-logo.png"
+import SectionBG from "../../images/top-cta-bg.svg"
+import SectionBGTablet from "../../images/top-cta-bg-tablet.svg"
+import SectionBGMobile from "../../images/top-cta-bg-mobile.svg"
 
 const topCtaSection = () => (
   <section className="top-cta-section">
@@ -27,15 +27,18 @@ const topCtaSection = () => (
           <img src={TopCtaLogo} alt="" />
         </div>
         <h2>"Bug Bounty Program"</h2>
-        <div className="subheading">Up to 100k$ in bug bounty!</div>
+        <div className="subheading">Up to $100k in bug bounty!</div>
         <div className="btn-wrap">
-          <a href="/" className="btn btn--secondary-border">
+          <a
+            href="https://immunefi.com/bounty/apwine"
+            className="btn btn--secondary-border"
+          >
             Learn more
           </a>
         </div>
       </div>
     </div>
   </section>
-);
+)
 
-export default topCtaSection;
+export default topCtaSection

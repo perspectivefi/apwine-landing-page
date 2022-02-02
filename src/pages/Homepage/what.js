@@ -1,14 +1,14 @@
-import * as React from "react";
+import * as React from "react"
 
-import Picture from "../../images/what-ill.png";
-import PictureTablet from "../../images/what-ill.png";
-import PictureMobile from "../../images/what-ill.png";
+import Picture from "../../images/what-ill.png"
+import PictureTablet from "../../images/what-ill.png"
+import PictureMobile from "../../images/what-ill.png"
 
-import SectionBG from "../../images/pink-shadow.png";
-import SectionBGTablet from "../../images/pink-shadow.png";
-import SectionBGMobile from "../../images/pink-shadow.png";
+import SectionBG from "../../images/pink-shadow.png"
+import SectionBGTablet from "../../images/pink-shadow.png"
+import SectionBGMobile from "../../images/pink-shadow.png"
 
-import "../../styles/sections/homepage/what.scss";
+import "../../styles/sections/homepage/what.scss"
 
 const whatSection = () => (
   <section className="what-section">
@@ -30,7 +30,7 @@ const whatSection = () => (
           </picture>
         </div>
         <div className="col">
-          <div className="mini-heading">The what of APWine</div>
+          <div className="mini-heading">The what</div>
           <h2>Speculate on variations of Yield</h2>
           <p>
             Get directly exposed to the yield market through the derivatives
@@ -40,6 +40,6 @@ const whatSection = () => (
       </div>
     </div>
   </section>
-);
+)
 
-export default whatSection;
+export default whatSection

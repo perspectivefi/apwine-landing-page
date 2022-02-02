@@ -1,23 +1,23 @@
-import * as React from "react";
-import Layout from "../layout";
+import * as React from "react"
+import Layout from "../layout"
 
-import Hero from "./Homepage/hero";
-import TopCta from "./Homepage/topCta";
-import Defi from "./Homepage/defi";
-import How from "./Homepage/how";
-import What from "./Homepage/what";
-import Why from "./Homepage/why";
-import Hedge from "./Homepage/hedge";
-import Advisors from "./Homepage/advisors";
-import OurTeam from "./Homepage/ourTeam";
-import TrustedBy from "./Homepage/trustedBy";
-import CtaSubscribe from "./Homepage/ctaSubscribe";
+import Hero from "./Homepage/hero"
+import TopCta from "./Homepage/topCta"
+import Defi from "./Homepage/defi"
+import How from "./Homepage/how"
+import What from "./Homepage/what"
+import Why from "./Homepage/why"
+import Hedge from "./Homepage/hedge"
+import Advisors from "./Homepage/advisors"
+import OurTeam from "./Homepage/ourTeam"
+import TrustedBy from "./Homepage/trustedBy"
+import CtaSubscribe from "./Homepage/ctaSubscribe"
 
-import DesktopCurveBottom from "../images/blue-bottom-curve-desktop.svg";
-import TabletCurveBottom from "../images/blue-bottom-curve-desktop.svg";
-import MobileCurveBottom from "../images/blue-bottom-curve-desktop.svg";
+import DesktopCurveBottom from "../images/blue-bottom-curve-desktop.svg"
+import TabletCurveBottom from "../images/blue-bottom-curve-desktop.svg"
+import MobileCurveBottom from "../images/blue-bottom-curve-desktop.svg"
 
-import "../styles/app.scss";
+import "../styles/app.scss"
 
 const IndexPage = () => (
   <Layout>
@@ -60,6 +60,6 @@ const IndexPage = () => (
 
     <CtaSubscribe />
   </Layout>
-);
+)
 
-export default IndexPage;
+export default IndexPage
