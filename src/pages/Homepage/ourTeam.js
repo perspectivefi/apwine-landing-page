@@ -48,7 +48,7 @@ const ourTeamSection = () => (
           <PersonTile
             type="Protocol"
             personName="Gaspard Peduzzi"
-            position="Solidity Developer"
+            position="Protocol"
             twitterURL="https://twitter.com/gaspardpeduzzi"
             imageURL={Team1}
           />
@@ -57,7 +57,7 @@ const ourTeamSection = () => (
           <PersonTile
             type="Development"
             personName="Ulysse Ramage"
-            position="Full Stack Developer"
+            position="UI/UX"
             twitterURL="https://twitter.com/ulydev"
             imageURL={Team5}
           />
