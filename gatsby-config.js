@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "apwine",
+    title: `APWine`,
+    description: `The yield derivatives marketplace. Tokenise and get your yield upfront. Hedge your risk on APY volatility.`,
+    author: `apwine`,
+    baseUrl: `https://apwine.fi`,
   },
   plugins: [
     // "gatsby-plugin-sass",
@@ -38,4 +40,4 @@ module.exports = {
       __key: "images",
     },
   ],
-};
+}
