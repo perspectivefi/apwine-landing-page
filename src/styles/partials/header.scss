@@ -80,12 +80,17 @@ header.mobile-menu {
   pointer-events: none;
   padding-bottom: 32px;
   background-color: #e4e6fd;
+  background-repeat: no-repeat;
+  background-size: 100%;
   @include transition(transform);
-
-  // todo: pridėt background image
 
   @include tablet {
     display: flex;
+    background-image: url('../../images/header-bg-tablet.png');
+  }
+
+  @include mobile {
+    background-image: url('../../images/header-bg-mobile.png');
   }
 
   &.active {
