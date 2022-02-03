@@ -33,7 +33,7 @@ const HeroSection = () => {
               </p>
             </div>
             <div className="btn-wrap">
-              <Link to="/" className="btn btn--primary">
+              <Link to="https://app.apwine.fi" className="btn btn--primary">
                 Get your future yield today
               </Link>
             </div>
