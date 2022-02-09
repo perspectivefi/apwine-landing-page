@@ -150,8 +150,8 @@
             }
 
             a {
-              padding: 0 25px;
-              border: 2px solid #5b44b0;
+              // padding: 0 25px;
+              // border: 2px solid #5b44b0;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -163,13 +163,22 @@
               line-height: 17px;
               text-align: center;
               color: #ffffff;
+              position: relative;
 
               @include mobile {
-                padding: 0 12px;
+                //   padding: 0 12px;
                 width: 74px;
                 height: 74px;
-                font-size: 10px;
-                line-height: 12px;
+                //   font-size: 10px;
+                //   line-height: 12px;
+              }
+
+              // span {
+              //   position: relative;
+              //   z-index: 3;
+              // }
+
+              .hover-container {
               }
             }
           }

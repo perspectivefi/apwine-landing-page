@@ -24,10 +24,10 @@ const HedgeSection = () => {
     });
 
     function animatebodymovin(duration) {
-      const scrollPosition = window.scrollY;
+      const scrollPosition = window.scrollY / 1.15;
       const maxFrames = anim.totalFrames;
-
-      const frame = (maxFrames / 65) * (scrollPosition / (duration / 70));
+      const frame =
+        (maxFrames / 65) * (scrollPosition / (duration / 60)) * 1.65;
 
       anim.goToAndStop(frame, true);
     }
