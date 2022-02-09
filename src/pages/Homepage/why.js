@@ -1,21 +1,21 @@
-import * as React from "react";
+import * as React from "react"
 
-import Picture from "../../images/why-ill.png";
-import PictureTablet from "../../images/why-ill.png";
-import PictureMobile from "../../images/why-ill.png";
+import Picture from "../../images/why-ill.png"
+import PictureTablet from "../../images/why-ill.png"
+import PictureMobile from "../../images/why-ill.png"
 
-import "../../styles/sections/homepage/why.scss";
+import "../../styles/sections/homepage/why.scss"
 
-import SectionBG from "../../images/why-shadow.png";
-import SectionBGTablet from "../../images/why-shadow.png";
-import SectionBGMobile from "../../images/why-shadow.png";
+import SectionBG from "../../images/why-shadow.png"
+import SectionBGTablet from "../../images/why-shadow.png"
+import SectionBGMobile from "../../images/why-shadow.png"
 
 const whySection = () => (
   <section className="why-section">
     <div className="container">
       <div className="row">
         <div className="col">
-          <div className="mini-heading">The why of APWine</div>
+          <div className="mini-heading">The why</div>
           <h2>Better Capital Efficiency</h2>
           <p>Manage your portfolio’s efficiency with more granularity.</p>
           <div className="btn-wrap">
@@ -42,6 +42,6 @@ const whySection = () => (
       </div>
     </div>
   </section>
-);
+)
 
-export default whySection;
+export default whySection

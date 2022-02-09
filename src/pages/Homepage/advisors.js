@@ -1,15 +1,15 @@
-import * as React from "react";
-import PersonTile from "../../components/personTile";
+import * as React from "react"
+import PersonTile from "../../components/personTile"
 
-import Team1 from "../../images/advisors/1.png";
-import Team2 from "../../images/advisors/2.png";
-import Team3 from "../../images/advisors/3.png";
+import Team1 from "../../images/advisors/1.png"
+import Team2 from "../../images/advisors/2.png"
+import Team3 from "../../images/advisors/3.png"
 
-import SectionBG from "../../images/advisors-bg.png";
-import SectionBGTablet from "../../images/advisors-bg.png";
-import SectionBGMobile from "../../images/advisors-bg.png";
+import SectionBG from "../../images/advisors-bg.png"
+import SectionBGTablet from "../../images/advisors-bg.png"
+import SectionBGMobile from "../../images/advisors-bg.png"
 
-import "../../styles/sections/homepage/advisors.scss";
+import "../../styles/sections/homepage/advisors.scss"
 
 const advisorsSection = () => (
   <section className="advisors-section">
@@ -26,9 +26,18 @@ const advisorsSection = () => (
         <div className="col">
           <PersonTile
             type=""
+            personName="Julien Bouteloup"
+            position="Stake Capital, Curve"
+            twitterURL="https://twitter.com/bneiluj"
+            imageURL={Team3}
+          />
+        </div>
+        <div className="col">
+          <PersonTile
+            type=""
             personName="Jiahua Xu"
             position="EPFL, UCL"
-            twitterURL="#"
+            twitterURL="https://twitter.com/jiahuajavaxu"
             imageURL={Team1}
           />
         </div>
@@ -37,29 +46,17 @@ const advisorsSection = () => (
             type=""
             personName="Marc Zeller"
             position="AAVE"
-            twitterURL="#"
+            twitterURL="https://twitter.com/lemiscate"
             imageURL={Team2}
           />
         </div>
-        <div className="col">
-          <PersonTile
-            type=""
-            personName="Julien Bouteloup"
-            position="Stake Capital, Curve"
-            twitterURL="#"
-            imageURL={Team3}
-          />
-        </div>
+
         <div className="col col-heading">
           <h2>Meet our Advisors</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            varius vestibulum lectus.
-          </p>
         </div>
       </div>
     </div>
   </section>
-);
+)
 
-export default advisorsSection;
+export default advisorsSection

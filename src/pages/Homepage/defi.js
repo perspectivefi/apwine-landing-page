@@ -1,10 +1,10 @@
-import * as React from "react";
+import * as React from "react"
 
-import "../../styles/sections/homepage/defi.scss";
+import "../../styles/sections/homepage/defi.scss"
 
-import SectionBG from "../../images/defi-bg.png";
-import SectionBGTablet from "../../images/defi-bg.png";
-import SectionBGMobile from "../../images/defi-bg-mobile.png";
+import SectionBG from "../../images/defi-bg.png"
+import SectionBGTablet from "../../images/defi-bg.png"
+import SectionBGMobile from "../../images/defi-bg-mobile.png"
 
 const defiSection = () => (
   <section className="defi-section">
@@ -29,14 +29,17 @@ const defiSection = () => (
             Future Yield Tokens or Principal Tokens as collateral.
           </p>
           <div className="btn-wrap">
-            <a href="/" className="btn btn--secondary-border">
-              Docs
+            <a
+              href="https://docs.apwine.fi"
+              className="btn btn--secondary-border"
+            >
+              Visit Docs
             </a>
           </div>
         </div>
       </div>
     </div>
   </section>
-);
+)
 
-export default defiSection;
+export default defiSection
