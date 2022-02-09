@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import { Link } from "gatsby";
 import Lottie from "lottie-web";
 import PersonTile from "../../components/personTile";
