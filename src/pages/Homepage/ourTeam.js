@@ -2,6 +2,10 @@ import React, { useRef, useEffect } from "react"
 import PersonTile from "../../components/personTile"
 import { Link } from "gatsby"
 
+import animationData from "../../jsons/button_hover.json"
+
+import lottie from "lottie-web"
+
 import Team1 from "../../images/team/1.png"
 import Team2 from "../../images/team/2.png"
 import Team3 from "../../images/team/3.png"
@@ -20,11 +24,13 @@ import SectionBGMobile from "../../images/our-team-bg-mobile.png"
 
 import "../../styles/sections/homepage/ourTeam.scss"
 
-const ourTeamSection = () => {
+const OurTeamSection = () => {
   const lottieRef = useRef()
 
   useEffect(() => {
-    const buttonAnimation = Lottie.loadAnimation({
+    if (!lottieRef.current) return
+
+    const buttonAnimation = lottie.loadAnimation({
       container: lottieRef.current,
       renderer: "svg",
       loop: false,
@@ -51,7 +57,7 @@ const ourTeamSection = () => {
       lottieRef.current.removeEventListener("mouseenter", handleMouseEnter)
       lottieRef.current.removeEventListener("mouseleave", handleMouseLeave)
     }
-  }, [])
+  }, [lottieRef.current])
 
   return (
     <section className="our-team-section">
@@ -189,4 +195,4 @@ const ourTeamSection = () => {
   )
 }
 
-export default ourTeamSection
+export default OurTeamSection
