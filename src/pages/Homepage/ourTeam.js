@@ -81,7 +81,7 @@ const OurTeamSection = () => {
               </p>
             </div>
             <div className="btn-wrap">
-              <Link to="#" className="hover-container-wrap" ref={lottieRef}>
+              <Link to="https://cryptocurrencyjobs.co/startups/apwine" className="hover-container-wrap" ref={lottieRef}>
                 <div className="hover-container"></div>
               </Link>
             </div>
