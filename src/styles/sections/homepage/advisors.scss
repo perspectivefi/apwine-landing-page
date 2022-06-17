@@ -1,5 +1,5 @@
 section.advisors-section {
-  padding-bottom: 266px;
+  padding-bottom: 200px;
   position: relative;
 
   @include tablet {
@@ -75,7 +75,7 @@ section.advisors-section {
           max-width: 40%;
           display: flex;
           flex-direction: column;
-          align-items: center;
+          align-items: end;
 
           @include tablet {
             margin-bottom: 37px;
@@ -93,13 +93,13 @@ section.advisors-section {
           }
 
           h2 {
+            text-align: right;
             font-family: "Space Grotesk", sans-serif;
             font-weight: 600;
             font-size: 48px;
             line-height: 56px;
             letter-spacing: -2px;
             color: #ffffff;
-            margin-bottom: 24px;
             max-width: 288px;
 
             @include tablet {

@@ -71,12 +71,19 @@
       }
 
       .col {
-        padding: 13px 12px;
+        &:not(.col-heading):nth-child(-n+4) {
+          margin: 20px 0 50px 0;
+        }
+
+        padding: 20px 12px;
         flex: 0 0 20%;
         max-width: 20%;
 
         @include mobile {
           padding: 8px;
+          &:not(.col-heading):nth-child(-n+4) {
+            margin: 0;
+          }
         }
 
         @include tablet {
