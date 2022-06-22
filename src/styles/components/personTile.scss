@@ -1,10 +1,4 @@
 .person-tile {
-    &.top-border {
-      padding: 14px 16px 15px;
-      border-top: 2px solid #E54DFC;
-      color: #FFFFFF;
-    }
-
     .twitter-tile {
       font-family: Inter, sans-serif;
 
@@ -23,7 +17,7 @@
         border-radius: 10px;
         display: flex;
         align-items: center;
-        border: 1px solid #e54dfc;
+        border: 2px solid #e54dfc;
         padding: 7px 11px;
         @include transition(background);
 
