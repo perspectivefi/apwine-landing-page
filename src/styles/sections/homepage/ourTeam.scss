@@ -73,6 +73,10 @@
       .col {
         &:not(.col-heading):nth-child(-n+4) {
           margin: 20px 0 50px 0;
+
+          @include tablet {
+            margin: 0;
+          }
         }
 
         padding: 20px 12px;
