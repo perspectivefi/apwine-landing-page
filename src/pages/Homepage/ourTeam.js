@@ -6,18 +6,6 @@ import animationData from "../../jsons/button_hover.json"
 
 import lottie from "lottie-web"
 
-import Team1 from "../../images/team/1.png"
-import Team2 from "../../images/team/2.png"
-import Team3 from "../../images/team/3.png"
-import Team4 from "../../images/team/4.png"
-import Team5 from "../../images/team/5.png"
-import Team6 from "../../images/team/6.png"
-import Team7 from "../../images/team/7.png"
-import Team8 from "../../images/team/8.png"
-import Team9 from "../../images/team/9.png"
-import Team11 from "../../images/team/11.png"
-import Team12 from "../../images/team/12.png"
-
 import SectionBG from "../../images/our-team-bg.png"
 import SectionBGTablet from "../../images/our-team-bg-tablet.png"
 import SectionBGMobile from "../../images/our-team-bg-mobile.png"
@@ -69,7 +57,7 @@ const OurTeamSection = () => {
         </picture>
       </div>
 
-      <div className="shadow"></div>
+      <div className="shadow"/>
 
       <div className="container">
         <div className="row">
@@ -80,11 +68,11 @@ const OurTeamSection = () => {
                 Our top notch family currently counts 11 incredible persons.
               </p>
             </div>
-            <div className="btn-wrap">
-              <Link to="https://cryptocurrencyjobs.co/startups/apwine" className="hover-container-wrap" ref={lottieRef}>
-                <div className="hover-container"></div>
-              </Link>
-            </div>
+            {/*<div className="btn-wrap">*/}
+            {/*  <Link to="https://cryptocurrencyjobs.co/startups/apwine" className="hover-container-wrap" ref={lottieRef}>*/}
+            {/*    <div className="hover-container"/>*/}
+            {/*  </Link>*/}
+            {/*</div>*/}
           </div>
           <div className="col">
             <PersonTile
@@ -92,7 +80,6 @@ const OurTeamSection = () => {
               personName="Gaspard Peduzzi"
               position="Protocol"
               twitterURL="https://twitter.com/gaspardpeduzzi"
-              imageURL={Team1}
             />
           </div>
           <div className="col">
@@ -101,7 +88,6 @@ const OurTeamSection = () => {
               personName="Ulysse Ramage"
               position="UI/UX"
               twitterURL="https://twitter.com/ulydev"
-              imageURL={Team5}
             />
           </div>
           <div className="col">
@@ -110,7 +96,6 @@ const OurTeamSection = () => {
               personName="Jean Chambras"
               position="Full Stack Developer"
               twitterURL="https://twitter.com/jean_chambras"
-              imageURL={Team8}
             />
           </div>
           <div className="col">
@@ -119,7 +104,6 @@ const OurTeamSection = () => {
               personName="Antoine Mouran"
               position="Business Developer"
               twitterURL="https://twitter.com/L0GYKAL"
-              imageURL={Team4}
             />
           </div>
           <div className="col">
@@ -128,7 +112,6 @@ const OurTeamSection = () => {
               personName="Irene"
               position="Head of Growth / Events"
               twitterURL="https://twitter.com/irene_fucile"
-              imageURL={Team11}
             />
           </div>
           <div className="col">
@@ -137,7 +120,6 @@ const OurTeamSection = () => {
               personName="Red"
               position="Marketing"
               twitterURL="https://twitter.com/smokatokey"
-              imageURL={Team7}
             />
           </div>
           <div className="col">
@@ -146,7 +128,6 @@ const OurTeamSection = () => {
               personName="Sam"
               position="Community & Internal orga."
               twitterURL="https://twitter.com/Sam48152259"
-              imageURL={Team3}
             />
           </div>
           <div className="col">
@@ -154,17 +135,6 @@ const OurTeamSection = () => {
               type="Protocol"
               personName="Ayush Tiwari"
               position="Solidity Developer"
-              twitterURL="#"
-              imageURL={Team6}
-            />
-          </div>
-          <div className="col">
-            <PersonTile
-              type="Development"
-              personName="Daniel Tok"
-              position="Full Stack Developer"
-              twitterURL="#"
-              imageURL={Team2}
             />
           </div>
           <div className="col">
@@ -172,8 +142,7 @@ const OurTeamSection = () => {
               type="Development"
               personName="Mateusz Franczuk"
               position="Full Stack Developer"
-              twitterURL="#"
-              imageURL={Team9}
+              twitterURL="https://twitter.com/localtechboy"
             />
           </div>
           <div className="col">
@@ -181,8 +150,14 @@ const OurTeamSection = () => {
               type="Protocol"
               personName="Manmeet"
               position="Solidity Developer"
-              twitterURL="#"
-              imageURL={Team12}
+            />
+          </div>
+          <div className="col">
+            <PersonTile
+              type="Protocol"
+              personName="Yanis Berkani"
+              position="Solidity Developer"
+              twitterURL="https://twitter.com/berkani4_yanis"
             />
           </div>
         </div>

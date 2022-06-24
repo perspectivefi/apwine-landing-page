@@ -1,10 +1,6 @@
 import * as React from "react"
 import PersonTile from "../../components/personTile"
 
-import Team1 from "../../images/advisors/1.png"
-import Team2 from "../../images/advisors/2.png"
-import Team3 from "../../images/advisors/3.png"
-
 import SectionBG from "../../images/advisors-bg.png"
 import SectionBGTablet from "../../images/advisors-bg.png"
 import SectionBGMobile from "../../images/advisors-bg.png"
@@ -25,29 +21,26 @@ const advisorsSection = () => (
       <div className="row">
         <div className="col">
           <PersonTile
-            type=""
+            type="Advisor"
             personName="Julien Bouteloup"
             position="Stake Capital, Curve"
             twitterURL="https://twitter.com/bneiluj"
-            imageURL={Team3}
           />
         </div>
         <div className="col">
           <PersonTile
-            type=""
+            type="Advisor"
             personName="Jiahua Xu"
             position="EPFL, UCL"
             twitterURL="https://twitter.com/jiahuajavaxu"
-            imageURL={Team1}
           />
         </div>
         <div className="col">
           <PersonTile
-            type=""
+            type="Advisor"
             personName="Marc Zeller"
             position="AAVE"
             twitterURL="https://twitter.com/lemiscate"
-            imageURL={Team2}
           />
         </div>
 
