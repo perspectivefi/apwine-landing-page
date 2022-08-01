@@ -17,6 +17,7 @@
   "dependencies": {
     "gatsby": "^4.3.0",
     "gatsby-image": "^3.11.0",
+    "gatsby-plugin-fathom": "^2.1.1",
     "gatsby-plugin-google-analytics": "^4.3.0",
     "gatsby-plugin-image": "^2.3.0",
     "gatsby-plugin-manifest": "^4.8.0",

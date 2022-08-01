@@ -9,6 +9,12 @@ module.exports = {
   plugins: [
     // "gatsby-plugin-sass",
     {
+      resolve: "gatsby-plugin-fathom",
+      options: {
+        siteId: process.env.FATHOM_SITE_ID,
+      },
+    },
+    {
       resolve: "gatsby-plugin-sass",
       options: {
         additionalData: `@import "${__dirname}/src/styles/config/_import.scss";`,
