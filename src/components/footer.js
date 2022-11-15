@@ -30,7 +30,7 @@ const Footer = () => (
         <nav>
           <Link to="https://gov.apwine.fi">Forum</Link>
           <Link to="https://docs.apwine.fi">Documentation</Link>
-          <Link to="https://cryptocurrencyjobs.co/startups/apwine">
+          <Link to="https://apwine.notion.site/Careers-0bee039fdb2b459a8c867abb3c9d23fc">
             Careers
           </Link>
         </nav>
