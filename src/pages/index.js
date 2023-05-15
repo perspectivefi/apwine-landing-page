@@ -8,8 +8,6 @@ import How from "./Homepage/how"
 import What from "./Homepage/what"
 import Why from "./Homepage/why"
 import Hedge from "./Homepage/hedge"
-import Advisors from "./Homepage/advisors"
-import OurTeam from "./Homepage/ourTeam"
 import TrustedBy from "./Homepage/trustedBy"
 import CtaSubscribe from "./Homepage/ctaSubscribe"
 
@@ -41,8 +39,8 @@ const IndexPage = () => (
       <What />
       <Why />
       <Hedge />
-      <Advisors />
-      <OurTeam />
+      {/*<Advisors />*/}
+      {/*<OurTeam />*/}
       <TrustedBy />
 
       <div className="curve-wrap bottom">
