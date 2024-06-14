@@ -17,7 +17,7 @@ const Socials = () => (
     <Link to="https://github.com/APWine" className="social-link">
       <Github />
     </Link>
-    <Link to="https://discord.com/invite/GJhRf3r3UU" className="social-link">
+    <Link to="https://discord.gg/e2PfbPenMB" className="social-link">
       <Discord />
     </Link>
     <Link to="https://t.co/3F6Xi6dLvt" className="social-link">
